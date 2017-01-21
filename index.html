@@ -579,5 +579,142 @@ This a directed and rooted tree, which can have no more than two branches off ea
             if right[currentNode] = 0:
                 right[currentNode] = nodeCount
             currentNode = right[currentNode]
-</code></pre></div></body>
+</code></pre>
+
+
+
+<h2 id="the-internet">The Internet</h2>
+
+<h3 id="the-internet-and-the-world-wide-web">The Internet and the world wide web</h3>
+
+<p><strong>Internet</strong> A global network of networks <br>
+<strong>Uniform Resource Locator (URL)</strong> A method of identifying the location of resources on the Internet</p>
+
+<p>A URL contains a protocol, a server being addressed, an organisation name, the organisation type, a country code, and the name of the file to be accessed. <br>
+The protocol can be http, https, or ftp <br>
+The domain name, which is the location of the resource on the Internet <br>
+The filename to locate the specific file needed. If the file is located within a subdirectory on the server, a pathname will give be given instead of just the filename</p>
+
+<p><strong>Domain name</strong> The recognisable name of a domain on the Internet</p>
+
+<p>Required suffixes</p>
+
+<ul>
+<li>.com Commercial organisation</li>
+<li>.gov Indicates a governmental organization</li>
+<li>.ac Academic institution</li>
+<li>.sch School</li>
+<li>.org An organisation other than a commercial business</li>
+<li>.net A company providing Internet services</li>
+</ul>
+
+<p>When WWW is typed, the domain name is known as a fully qualified domain name, and is completely unambiguous as it can only relate to one host. However, it is generally note necessary to specify the host.</p>
+
+<p><strong>Internet protocol address</strong> A unique number that identifies devices on a network</p>
+
+<p>An IP address is a dotted quad number that identifies every computer that sends or receives data on a network and on the Internet. <br>
+The protocol used to transmit data (TCP/IP) can only work with numbers. Therefore, every domain name is mapped to a number. this number is the real Internet address and identifies the computer that is transmitting or receiving data. It is called an IP address because it uses the Internet Protocol.</p>
+
+<p>A domain name is sometimes described as a proxy for the IP address which means that the user types in a domain name which is transferred to a domain name server (DNS) which then translates the name into the IP address. An analogy could be the ability to store numbers on a mobile phone. The user selects a name from the list which is then looked at to find and dial the actual telephone number.</p>
+
+<p>Some Ip addresses are classed as private or non-routable addresses. Typically these are the IP addresses used by devices on a private network perhaps in a home, school, or business. The IP address is needed in order to route data around the network, however it does not need to be made public as as that device is not directly connected to the Internet. It is hidden behind a router or firewall. Not-routable addresses only have to be unique within the LAN and therefore do not need to be allocated on a global basis.</p>
+
+<p>When connection to the internet is required, the device will be connected to a router or proxy server in order to connect. in this case the IP address of that router or server needs to be a public or routable address in which case it becomes a unique address that is registered under the domain name system.</p>
+
+<h3 id="ports">Ports</h3>
+
+<p><strong>Port</strong> Used to identify a particular process or application on a network <br>
+<strong>POP3</strong> A protocol (set of rules) for receiving emails</p>
+
+<p>Port addresses are often used to run processes for common networking tasks and many have been assigned port numbers that are in widespread use. For example, port 25 is used for the SMTP application that checks for incoming email on an emails server. Port 110 is used for the POP3 application that fetches email from the email server.</p>
+
+<p>There are around 250 well known ports, which are used to launch various processes, many of which are applications related to other protocols, such as FTP, DHCP, and SSH.</p>
+
+<ul>
+<li>21 FTP</li>
+<li>22 SSH</li>
+<li>23 Telnet</li>
+<li>25 SMTP</li>
+<li>53 DNS</li>
+<li>80 HTTP</li>
+<li>110 POP3</li>
+<li>143 IMAP</li>
+</ul>
+
+<p>When a client sends a request to the server using a well-known port, the server needs to respond back to a client port and not the well known port on the client side. For example, if a server receives a request on port 80, it does not send it back to port 80 on the client. Therefore as part of the client request, a source port must also be sent so tat the server knows which port to send it back to.</p>
+
+<p><strong>Secure Shell protocol (SSH)</strong> A protocol for remote access to computers</p>
+
+<h3 id="network-address-translation">Network address translation</h3>
+
+<p>The system that is used to match the private IP addresses with the public ones is called NAT. This has two main advantages. One is that a unique IP address is not needed for every single device on a network, only on the router or server that is physically connected. This means that only the public IP address needs to be registered with the DNS system. The second advantage is that there is an increased level of security as the private IP address is not being broadcast over the Internet, making that device more secure from unauthorised access.</p>
+
+<p><strong>Domain name server (DNS)</strong> A system of connected domain name servers that provide the IP address of every website on the Internet</p>
+
+<p>The router will track connections and maintain listings of the mappings between private IP addresses and port numbers and the corresponding public address. It does this by adding entries to a translation table which acts as a port lookup between the internal IP address and the external IP address.</p>
+
+<p>The following is a common way that NAT can work when a workstation on the internal network wants to load data from a server on the Internet.</p>
+
+<ul>
+<li>The workstation on the internal network sends a packet to the server on the Internet to request some data, including its own internal IP address and port number in the packet so that the server knows where to return the data to</li>
+<li>The router replaces the internal IP address and the port number in the packet with its external IP address and a port number that it generates. This port number will be unique to this communication, within a certain time frame.</li>
+<li>The router stores the mapping information from the internal IP address and port number to external port number in the translation table</li>
+<li>Data sent back from the server will be received by the router which will look up the port number in the translation table to identify which machine on the the internal network sent the request to the server</li>
+<li>The router’s IP address in the packet will be replaced with the originating workstation’s IP address and port number read from the translation table</li>
+<li>The reply packet can then be sent to the originating workstation</li>
+<li>Where the translation table does not contain a match to a port number in a packet received from a computer on the Internet, the packet is dropped because it is not a packet sent in response to a request from within the network, and may be a hacking attempt</li>
+<li>The internal IP address and port are never made public on the external network</li>
+</ul>
+
+<h3 id="port-forwarding">Port forwarding</h3>
+
+<p>Port forwarding is commonly used when a server inside a private network, with a non-routable IP address, is used to provide services to clients on the Internet. As the server as a non-routable IP address, it cannot be accessed directly from the Internet. Therefore the client on the Internet must use the public IP address of the router that connects the private network with the server on it to initiate a connection. <br>
+This router can be programmed so that requests sent to it on a particular port number are forwarded to a device with a specific IP address within the network. This is port forwarding.</p>
+
+<p><strong>Port forwarding</strong> A method of routing data through additional ports</p>
+
+<h3 id="sockets">Sockets</h3>
+
+<p>A network socket is an endpoint of a communication flow across a computer network. Sockets are created in software, not hardware. A TCP/IP socket is made up from the combination of an IP address and a port number. When a computer needs to communicate with a server it will send a request to the server using the server’s IP address and port number for that type of request.</p>
+
+<p><strong>Socket</strong> An endpoint of a communication flow across a computer network</p>
+
+<p>Sockets can be created at any time to enable a network connection to be established to or from a computer. </p>
+
+<h3 id="subnet-masking">Subnet masking</h3>
+
+<p>IP addresses are split into a network identifier and a host identifier. The network could may be a local network, or it could be a remote network and the device could be a computer, printer, or router. Network Ids can also be written with zeros in the parts of the IP address that would be used to identify the host.</p>
+
+<p><strong>Subnet masking</strong> A method of dividing a network into multiple smaller networks</p>
+
+<p>Addresses are split up this way to make networks easier to manage and and to make it more efficient when routing data. For example, in a LAn split across two building, the administrator may find it sueful to allocate IP addresses according to which building a particular computer is in. Where a network is separated in this way, each part is known as a subnet. <br>
+Data sent to a particular computer will only travel around the parts of the network that it needs to, making the network more efficient.</p>
+
+<p>When a computer on a network sends data to another computer, it needs to identify whether it is on the same subnet as the other computer. If it is, it can send data to it directly. If it is not, it will send data to the relevant router or gateway, which will in turn send the data to the correct subnet and computer.</p>
+
+<p><strong>Gateway</strong> A node on a network that acts as a connection point to another network with different protocols</p>
+
+<p>In an organisation, a gateway may be used to connect two different companies together. For a home user, a gateway may be used by their ISP to provide access to the Internet.</p>
+
+<p>The gateway carries out all of the protocol conversion required to enable the two networks to work together.</p>
+
+<p>To identify whether the destination computer is on the same subnet, the sending computer needs to look at the network portion of the destinatoin IP address to see if it is the same as its own. To do this, a subnet mask is used. Each device on the subnet is programmed with the same subnet mask. Within the subnet mask, a value of 1 is assigned to all the bits that are part of the network ID, and 0 to all of the parts which identify the host.  <br>
+The computer will AND the full IP address of the sending computer, and AND its own full IP address, to calculate their network IDs. If they network IDs are equal, data can be sent directly between them.</p>
+
+<h3 id="ip-address-v4-and-v6">IP address v4 and v6</h3>
+
+<p>As IP v4 was exhausted, it was replaced by IP v6 which uses 128 bits represented as eight groups of four hex numbers separated by colons.</p>
+
+<p>this massively increases the range of numbers available as there are more digits in the number, and hex is being used allowing for a greater range within each group of numbers.</p>
+
+<h3 id="dynamic-host-configuration-protocol-dhcp">Dynamic host configuration protocol (DHCP)</h3>
+
+<p>IP addresses are defined as either static or dynamic. Static IP addresses are ones that are assigned and then never change. Dynamic IP addresses are allocated every time a device connects to a network and this is perhaps the most common approach. <br>
+The allocation is done automatically by an application as you log on. </p>
+
+<p><strong>DHCP</strong> A set of rules for allocating locally unique IP addresses to devices as they connect to a network</p>
+
+<p>The application looks for an available IP address from its poll of addresses and allocates it to a device. Where there are hundreds of users logging on and off a network all the time, this is a very efficient system as it means the administrator does not have to do it manually.</p>
+
+<p>A dedicated DHCP server is used on the network and handles the requests by managing a pool of available</p></div></body>
 </html>
