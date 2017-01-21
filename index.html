@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Computer Science Notes</title>
+<link rel="stylesheet" href="https://stackedit.io/res-min/themes/base.css" />
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+</head>
+<body><div class="container"><h1 id="computer-science-notes">Computer Science Notes</h1>
+
+
+
+<h2 id="data-structures">Data structures</h2>
+
+
+
+<h3 id="data-structure-and-abstract-data-types">Data structure and abstract data types</h3>
+
+<p><strong>Abstract data type</strong> A conceptual model of how data can be stored and operations can be carried out on the data</p>
+
+<p><strong>Data structure</strong> A common format for storing large volumes of related data, which is an implementation of an abstract data type</p>
+
+<p><strong>Array</strong> A set of related data items stored under a single identifier</p>
+
+
+
+<h3 id="files">Files</h3>
+
+<p>Two common portable formats are text files and binary files. <br>
+A text file is one that contains lines of text, or other human readable characters, where each line is usually referred to as a record. <br>
+A text file may also contain a header, which explains the content and structure of the file, and an end of file (EOF) marker so that programs reading the file know when to stop. <br>
+Common text file formats are .txt for raw text and .csv for structured data</p>
+
+<p><strong>Text file</strong> A file that contains human-readable characters <br>
+<strong>Binary file</strong> A file containing data as a series of binary digits  <br>
+<strong>Record</strong> One line of a text file <br>
+<strong>Field</strong> An item of data</p>
+
+
+
+<h3 id="static-and-dynamic-data-structures">Static and dynamic data structures</h3>
+
+<p><strong>Static</strong> A static data structure stores a set amount of data that is usually defined by the programmer. This is done by allocating a set of memory to the data structure. <br>
+Accessing individual elements of data within a static structure is very quick as their position in memory is fixed. However, the data structure will take up memory even if it is not being used.</p>
+
+<p><strong>Dynamic</strong> Dynamic data structures can use more or less memory as needed through the use of a heap. Unused blocks of memory are placed on the heap, which are then usable within a program. <br>
+A dynamic data structure is able to take more memory off the heap if it is needed and also pu blocks of unused memory back onto the heap if it is not needed. <br>
+This is a more efficient use of resources and a more flexible solution as elements can be added and removed much more easily.  <br>
+Stacks, queues, and binary trees are examples are of dynamic structures.</p>
+
+<p><strong>Queue</strong> A data structure where the first item added is the first to be removed <br>
+<strong>Stack</strong> A data structure where the last item added is the first item removed <br>
+<em>* Static data structure*</em> A method of storing data where the amount of data stored is fixed <br>
+<strong>Dynamic data structure</strong> A method of storing data where the amount of data stored will vary as the program is run <br>
+<strong>Heap</strong> A pool of unused memory that can be allocated to a dynamic data structure</p>
+
+
+
+<h3 id="queues-and-stacks">Queues and stacks</h3>
+
+<p><strong>Pointer</strong> A data item that identifies a particular element in a data structure</p>
+
+
+
+<h4 id="implementing-a-stack">Implementing a stack</h4>
+
+<p>To push an item to a stack</p>
+
+<pre><code>def push(item):
+    if stackPointer &lt; stackSize:
+        stackPointer += 1
+        stackArray[stackPointer] = item
+    else:
+        error "Stack full"
+</code></pre>
+
+<p>To pop an item from the stack</p>
+
+<pre><code>def pop():
+    if stackPointer &gt; 0:
+        return stackArray[stackPointer--]
+    else:
+        error "Stack is empty"
+</code></pre>
+
+
+
+<h4 id="uses-of-stacks">Uses of stacks</h4>
+
+<p>Due to the LIFO nature of stacks, they are used anywhere where the last data item is required to be the first out.</p>
+
+<p>Reversing a list <br>
+  - Iterate through the list, pushing each item to the stack <br>
+  - Clear the list (or create another) <br>
+  - Pop each item from the stack into the list</p>
+
+
+
+<h4 id="stack-frames">Stack frames</h4>
+
+<p>Stacks can be used to store information about a running program. </p>
+
+<p><strong>Stack frame</strong> A collection of data about a subroutine call <br>
+<strong>Call stack</strong> A stack used to store information about active subroutines and functions within a program</p>
+
+<p>Procedure <br>
+  - The return address is placed on the stack so that when the function is finished, the program can return to its previous address <br>
+  - The function arguments are pushed to the stack- <br>
+  - The previous two values, and space for the functions local variables make up a stack frame <br>
+  - Once the function has been completed the program returns to the return address which is on the stack</p>
+
+<p>This is the same mechanism used for handling interrupts and exceptions in programs. Interruptions and exceptions are events where hardware or software demand the attention of the processor and cause the current program to stop. This could be an external event such as a power failure.</p>
+
+<p><strong>Interrupt</strong> A signal sent by a device or program to the processor, requiring its attention</p>
+
+<p>When an interrupt happens, special blocks of code called interrupt handlers and exception handlers are loaded into memory and executed. Whilst the new demand is being dealt with the details of the first program are stored on the stack. As soon as the interrupt or exception has been dealt with, the details are taken back off the stack and the first program can carry on wherever it left off.</p>
+
+
+
+<h4 id="nesting-and-recursion">Nesting and recursion</h4>
+
+<p><strong>Nesting</strong> The process of putting one statement inside another</p>
+
+<p><strong>Recursion</strong> The process of a subroutine calling itself</p>
+
+
+
+<h4 id="queues">Queues</h4>
+
+<p><strong>Queue</strong> A FIFO structure where data leaves in the order that it arrives</p>
+
+<p>A common use of queues is when a peripheral is sending data to the CPU. If the CPU is not capable of dealing with the data immediately the data may be stored temporarily in a queue. <br>
+Data being sent from the CPU may also be stored in a queue, for example multiple documents being sent to a printer are stored in a print queue. <br>
+Queues which are used in this way are also called buffers.</p>
+
+<p>A queue has two pointers, the front and rear pointers.</p>
+
+
+
+<h4 id="linear-circular-and-priority-queues">Linear, circular, and priority queues</h4>
+
+<p><strong>Linear queue</strong> A FIFO structure which is organised as a line, such as in a list</p>
+
+<p><strong>Circular queue</strong> A FIFO structure implemented as a ring where the front and rear pointers can wrap around from the end to the start of the array</p>
+
+<p><strong>Priority queue</strong> A priority queue adds a further element to the queue which is the priority of each item. Where two items have the same priority, they will be handled according to their position in the queue </p>
+
+<p>An example of the use of a priority queue would be the print queue for a network printer, where it might be possible for some users to prioritise their own documents over those of others.</p>
+
+
+
+<h4 id="implementing-a-linear-queue">Implementing a linear queue</h4>
+
+<p>A queue is typically made up of a number of data items of the same type. Therefore a common implementation is to use an array.</p>
+
+<p>When the queue is implemented we need to know the following <br>
+  - The name of the array <br>
+  - The maximum size of the queue <br>
+  - Whether the queue is full or empty <br>
+  - Where the front of the queue is <br>
+  - Where the rear of the queue is</p>
+
+<p>Take the queue below as an example</p>
+
+<table>
+<thead>
+<tr>
+  <th>FP</th>
+  <th>-</th>
+  <th>-</th>
+  <th>-</th>
+  <th>-</th>
+  <th>RP</th>
+  <th>-</th>
+  <th>-</th>
+  <th>-</th>
+  <th>-</th>
+</tr>
+</thead>
+<tbody><tr>
+  <td>A</td>
+  <td>B</td>
+  <td>C</td>
+  <td>D</td>
+  <td>E</td>
+  <td>F</td>
+  <td>-</td>
+  <td>-</td>
+  <td>-</td>
+  <td>-</td>
+</tr>
+</tbody></table>
+
+
+<p>When the first element of the queue is removed it will look like this</p>
+
+<table>
+<thead>
+<tr>
+  <th>-</th>
+  <th>FP</th>
+  <th>-</th>
+  <th>-</th>
+  <th>-</th>
+  <th>RP</th>
+  <th>-</th>
+  <th>-</th>
+  <th>-</th>
+  <th>-</th>
+</tr>
+</thead>
+<tbody><tr>
+  <td>-</td>
+  <td>B</td>
+  <td>C</td>
+  <td>D</td>
+  <td>E</td>
+  <td>F</td>
+  <td>-</td>
+  <td>-</td>
+  <td>-</td>
+  <td>-</td>
+</tr>
+</tbody></table>
+
+
+<p>The front pointer has moved to position 1.</p>
+
+<p>Any item added to the queue is added to the rear. <br>
+Once an item has been added, the queue will look like this</p>
+
+<table>
+<thead>
+<tr>
+  <th>-</th>
+  <th>FP</th>
+  <th>-</th>
+  <th>-</th>
+  <th>-</th>
+  <th>-</th>
+  <th>RP</th>
+  <th>-</th>
+  <th>-</th>
+  <th>-</th>
+</tr>
+</thead>
+<tbody><tr>
+  <td>-</td>
+  <td>B</td>
+  <td>C</td>
+  <td>D</td>
+  <td>E</td>
+  <td>F</td>
+  <td>G</td>
+  <td>-</td>
+  <td>-</td>
+  <td>-</td>
+</tr>
+</tbody></table>
+
+
+<p>The rear pointer has moved to the right.</p>
+
+<p>If items are continually added the rear pointer will reach the end of the array and there will be no more available space to add new elements, despite there being space at earlier locations in the array. <br>
+The simplest method to address this problem is to keep the front pointer at index 0, and to move elements forward in the array. <br>
+However this is slow. As such, a circular queue is more common.</p>
+
+
+
+<h4 id="implementing-a-circular-queue">Implementing a circular queue</h4>
+
+<p>A circular queue works in a similar way to that described above, except that the front and rear pointers move when an item is added or removed, making more efficient use of memory.</p>
+
+<p>Take the queue below as an example</p>
+
+<table>
+<thead>
+<tr>
+  <th>FP</th>
+  <th>-</th>
+  <th>-</th>
+  <th>-</th>
+  <th>-</th>
+  <th>RP</th>
+  <th>-</th>
+  <th>-</th>
+  <th>-</th>
+  <th>-</th>
+</tr>
+</thead>
+<tbody><tr>
+  <td>A</td>
+  <td>B</td>
+  <td>C</td>
+  <td>D</td>
+  <td>E</td>
+  <td>F</td>
+  <td>-</td>
+  <td>-</td>
+  <td>-</td>
+  <td>-</td>
+</tr>
+</tbody></table>
+
+
+<p>If two items are removed, the queue will look like this</p>
+
+<p>Take the queue below as an example</p>
+
+<table>
+<thead>
+<tr>
+  <th>-</th>
+  <th>-</th>
+  <th>FP</th>
+  <th>-</th>
+  <th>-</th>
+  <th>RP</th>
+  <th>-</th>
+  <th>-</th>
+  <th>-</th>
+  <th>-</th>
+</tr>
+</thead>
+<tbody><tr>
+  <td>-</td>
+  <td>-</td>
+  <td>C</td>
+  <td>D</td>
+  <td>E</td>
+  <td>F</td>
+  <td>-</td>
+  <td>-</td>
+  <td>-</td>
+  <td>-</td>
+</tr>
+</tbody></table>
+
+
+<p>Four new items are added to the queue</p>
+
+<table>
+<thead>
+<tr>
+  <th>-</th>
+  <th>-</th>
+  <th>FP</th>
+  <th>-</th>
+  <th>-</th>
+  <th>-</th>
+  <th>-</th>
+  <th>-</th>
+  <th>-</th>
+  <th>RP</th>
+</tr>
+</thead>
+<tbody><tr>
+  <td>-</td>
+  <td>-</td>
+  <td>C</td>
+  <td>D</td>
+  <td>E</td>
+  <td>F</td>
+  <td>G</td>
+  <td>H</td>
+  <td>I</td>
+  <td>J</td>
+</tr>
+</tbody></table>
+
+
+<p>The rear pointer is now at the end of the array.</p>
+
+<p>When another item is added, the pointer will wrap around as so</p>
+
+<table>
+<thead>
+<tr>
+  <th>RP</th>
+  <th>-</th>
+  <th>FP</th>
+  <th>-</th>
+  <th>-</th>
+  <th>-</th>
+  <th>-</th>
+  <th>-</th>
+  <th>-</th>
+  <th>-</th>
+</tr>
+</thead>
+<tbody><tr>
+  <td>K</td>
+  <td>-</td>
+  <td>C</td>
+  <td>D</td>
+  <td>E</td>
+  <td>F</td>
+  <td>G</td>
+  <td>H</td>
+  <td>I</td>
+  <td>J</td>
+</tr>
+</tbody></table>
+
+
+<p>Procedure for adding to a circular queue</p>
+
+<pre><code>def add(item):
+    rearPointer += 1
+    if rearPointer == array.length: rearPointer = 0
+    array[rearPointer] = item
+</code></pre>
+
+<p>Procedure for removing an item from a circular queue</p>
+
+<pre><code>def remove():
+    data = array[frontPointer]
+    frontPointer += 1
+    if frontPointer ==  array.length: frontPointer = 0
+    return data
+</code></pre>
+
+
+
+<h4 id="implementing-a-priority-queue">Implementing a priority queue</h4>
+
+<p>A priority queue can be implemented using an array by assigning a vale to each element to indicate priority.</p>
+
+<p>There are two possible solutions when using an array.</p>
+
+<p>One option is to use a standard queue, and when items are removed, each element is checked for its priority to identify the next item to be removed.</p>
+
+<p>An alternative is to maintain the queue in priority order, which means that when a new item is added, it is put into the correct position in the queue. Removing items can then be done in the usual way.</p>
+
+
+
+<h3 id="graphs-and-trees">Graphs and trees</h3>
+
+<p><strong>Graph</strong> A mathematical structure that models the relationship between pairs of objects</p>
+
+<p><strong>Graph theory</strong> The underlying mathematical principles behind the use of graphs</p>
+
+<p><strong>Arc</strong> A join or relationship between two nodes. Also known as an edge</p>
+
+<p><strong>Vertex</strong> An object in the graph. Also known as a node</p>
+
+<p><strong>Weighted graph</strong> A graph that has a data value labelled on each edge</p>
+
+<p>A graph could be used to model the relationship between two places and how they are connected via transport links. <br>
+A weighted graph could be created by adding values to each arc, in this case travel times.</p>
+
+<p><strong>Undirected graph</strong> A graph where the relationship between vertices is two-way</p>
+
+<p><strong>Directed graph</strong> A graph where the relationship between vertices is one-way</p>
+
+
+
+<h4 id="use-of-graphs">Use of graphs</h4>
+
+<ul>
+<li>Human networks- In a social network humans may be represented as vertices, and their relationships represented by the arcs between them</li>
+<li>Transport networks- All transport works on the basis of a departure point, arrival point, and route. The departure and arrival points form the vertices and the routes form the edges. There are several applications for graph theory, including calculating quickest routes, planning timetables, scheduling and organising staff.</li>
+<li>The Internet and web: It is possible to ‘map’ the Internet or the World Wide Web using graph theory. In the case of the Internet, each connected device is a vertex with the physical connection forming the edge.</li>
+<li>Computer science- Latency is a key factor in communication networks. Graph theory can be used to calculate the quickest path to send data around a microprocessor where each vertex is a component and the edges are the buses that carry the data.</li>
+<li>Medical research- Understanding how diseases spread is critical to their prevention. For example, if studying the spread of a flu virus, each case of flu could be a node, or more likely each location where there has been an outbreak would be a vertex. The edges would be the distance between locations. A weighted graph could be used to analyse the extent of outbreaks in particular locations and how much that then spreads between vertices.</li>
+<li>Project management- Any kind of large scale projects can be modelled using a graph. This might be an engineering, construction, or IT project. In this case the vertices would be each of the actions needed to complete the project and the edges would be the relationships and dependencies which exist between the tasks.</li>
+<li>Game theory- This is used in wars and conflicts to try to understand the causes of conflicts and predict the likely actions that people might take for different strategies.</li>
+</ul>
+
+<p><strong>Latency</strong> The time delay that occurs when transmitting data between devices</p>
+
+
+
+<h4 id="adjacency-list">Adjacency list</h4>
+
+<p>A graph is an example of an abstract data type. We need to represent it in a way that can be stored and manipulated by the computer.</p>
+
+<p><strong>Adjacency list</strong> A data structure that stores a list of nodes with their adjacent nodes</p>
+
+<p>In an adjacency list the value of each vertex is stored, along with the vertices that they are next to.</p>
+
+<p>In an undirected graph all adjacencies are shown as this is a two way relationship. <br>
+In a directed graph only one vertex in each pairing with have the adjacent vertex, as the relationship is one-way.</p>
+
+<p>A weighted graph stores the value of each edge after each adjacent vertex.</p>
+
+
+
+<h4 id="adjacency-matrix">Adjacency matrix</h4>
+
+<p>An adjacency matrix uses a two dimensional array or grid populated with 1s and 0s.</p>
+
+<p><strong>Adjacency matrix</strong> A data structure set up as a two dimensional array or grid that shows whether there is an edge between each pair of nodes</p>
+
+<p>For an undirected graph the grid is populated with 1s and 0s. <br>
+For a directed graph, there are 1s where there is a one-way relationship between two vertices and 0 where there isn’t. <br>
+Following the same process as the undirected graph, the weight of the arc is used rather than a 1, and infinity is used rather than 0 for non-existent edges.</p>
+
+
+
+<h4 id="comparison-of-adjacency-list-and-adjacency-matrix">Comparison of adjacency list and adjacency matrix</h4>
+
+<table>
+<thead>
+<tr>
+  <th>Adjacency list</th>
+  <th>Adjacency matrix</th>
+</tr>
+</thead>
+<tbody><tr>
+  <td>Only stores data where there is an edge, so requires less memory</td>
+  <td>Stores a value for each combination of node, and therefore uses more memory</td>
+</tr>
+<tr>
+  <td>The list has to be parsed to identify whether particular adjacencies exist, increasing the time taken to process the data</td>
+  <td>Adjacencies can be identified more quickly as every combination is already stored, effectively forming a look up table</td>
+</tr>
+<tr>
+  <td>Where there are not many edges, forming a sparse graph, this method would be more suitable</td>
+  <td>Where there are many edges, forming a dense graph, this method would be more suitable</td>
+</tr>
+</tbody></table>
+
+
+
+
+<h4 id="trees">Trees</h4>
+
+<p>A tree is an abstract data structure that is very similar to a graph in that it has nodes and edges. It is called a tree because it is visualised as a hierarchical structure with branches. Trees can have a root, with all other nodes branching away from the root.</p>
+
+<p><strong>Tree</strong> A data structure similar to a graph, with no loops</p>
+
+<p><strong>Root</strong> The starting node in a rooted tree structure from which all other nodes branch off</p>
+
+<p><strong>Child</strong> A node in a tree that has nodes above it in the heirarchy</p>
+
+<p><strong>Leaf</strong> A node that does not have any other nodes beneath it</p>
+
+<p>Trees have a number of uses <br>
+* Can be used to store data that has an inherent heirarchical structure. For example storing directories <br>
+* Are dynamic, meaning that it is easy to add and delete nodes <br>
+* Are easy to search and use standard traversal algorithms <br>
+* Can be used to process the syntax of statements in natural and programming languages</p>
+
+
+
+<h4 id="binary-search-trees">Binary search trees</h4>
+
+<p>A common implementation of a tree is a binary search tree. <br>
+This a directed and rooted tree, which can have no more than two branches off each nde and is commonly used to store data that are input in a random order. The nature of the structure means that data are automatically sorted as they are entered and that it can be ‘traversed’ in order to search for and extract data from it.</p>
+
+<p>The first item of data to be stored is the root node. Any subsequent data is dealt with by the following routine</p>
+
+<ul>
+<li>If the value of the new data item is less than the value in the current node then branch left, otherwise branch right</li>
+<li>Keep repeating this process until you come to an ‘empty’ branch. Place the new value at the end of this branch</li>
+</ul>
+
+<p><strong>Binary tree</strong> A tree where each node can only have up to two child nodes attached to it</p>
+
+<p>A possible implementation of a binary tree is to use three arrays. The first stores the data itself, the second stores which node the left branch from a node, and the right copes with branches to the right.</p>
+
+<p>Procedure for adding to a non-empty tree</p>
+
+<pre><code>def add(item):
+    nodeCount = nodes.length
+    while nodes[nodeCount] != null:
+        nodeCount++
+    nodes[nodeCount] = item
+
+   currentNode = 1
+   while nodes[currentNode] != null:
+        if item &lt; nodes[currentNode]:
+            if left[currentNode] == 0:
+                left[currentNode] = nodeCount
+            currentNode = left[currentNode]
+        else:
+            if right[currentNode] = 0:
+                right[currentNode] = nodeCount
+            currentNode = right[currentNode]
+</code></pre></div></body>
+</html>
