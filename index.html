@@ -583,7 +583,104 @@ This a directed and rooted tree, which can have no more than two branches off ea
 
 
 
+<h3 id="hash-tables-and-dictionaries">Hash tables and dictionaries</h3>
+
+
+
+<h4 id="hash-tables">Hash tables</h4>
+
+<p><strong>Hash table</strong> A data structure that stores key/value pairs based on an index calculated from an algorithm</p>
+
+<p>A hash table is a data structure with two parts. A hash table has a table (or array) of data and a key, which is used to identify the location of the data within the table. <br>
+A hashing algorithm is carried out on they key, which then cats as an index to the specific location of that data item within the array</p>
+
+<p><strong>Hashing algorithm</strong> An algorithm which creates a unique index from given items of key data</p>
+
+
+
+<h4 id="use-of-hashing-algorithms">Use of hashing algorithms</h4>
+
+<p>Hashing algorithms are used in the following areas</p>
+
+<ul>
+<li>Databases- To create indices for databases</li>
+<li>Memory addressing- Used to generate memoery addresses where data will be stored</li>
+<li>Operating systems- Some operating systems use has tables to store and locate the executable files of its programs and utilities</li>
+<li>Encryption- Hashing algorithms can be used in encryption, provided that they cannot be reverse engineered</li>
+<li>Checksums- A value calculated from a set of data to be transmitted, allowing the transmitted data to be checked against the original data</li>
+<li>Programming- Compilers may use hash tables to index keywords and identifiers</li>
+</ul>
+
+
+
+<h4 id="hashing-algorithms">Hashing algorithms</h4>
+
+<ul>
+<li>A numeric value needs to be generated from the data in order to perform the calculation. </li>
+<li>Unique indices must be generated</li>
+<li>The indices need to be uniformly distributed</li>
+<li>The algorithm must be capable of producing a large enough range of indices to encompass the entire dataset</li>
+</ul>
+
+<p><strong>Collision</strong> When the algorithm produces the same index for two or more different keys</p>
+
+<p><strong>Clustering</strong> When a hashing algorithm produces indices which are not randomly distributed</p>
+
+<p><strong>Load factor</strong> The ratio of how many indices are available to how many there are in total</p>
+
+
+
+<h4 id="collisions">Collisions</h4>
+
+<p>When a collision occurs there must be a method of assigning a unique index to the key.</p>
+
+<p><strong>Index</strong> A location where values will be stored, calculated from the key</p>
+
+<p><strong>Chaining</strong> A technique for generating a unique index when there is a collision by adding the key/value to a list stored at the same index</p>
+
+<p><strong>Rehashing</strong> The process of running the hashing algorithm again, or another algorithm, when a collision occurs</p>
+
+
+
+<h4 id="dictionaries">Dictionaries</h4>
+
+<p><strong>Dictionary</strong> A data structure that maps keys to data</p>
+
+<p><strong>Associative array</strong> A two-dimensional structure containing key/value pairs of data</p>
+
+
+
+<h4 id="vectors">Vectors</h4>
+
+<p>Vectors can be implemented as values in a list</p>
+
+
+
+<h4 id="representing-vectors-as-a-function">Representing vectors as a function</h4>
+
+<p>A function is a construct which maps an input to an output</p>
+
+<p>If F is the function to create a vector, S is the complete set of values which F can be applied to and R is the complete set of potential outputs of the function, then</p>
+
+
+
+<p><script type="math/tex; mode=display" id="MathJax-Element-1137">F:S \to R</script></p>
+
+
+
+<h4 id="representing-vectors-as-arrows">Representing vectors as arrows</h4>
+
+<p><strong>Magnitude</strong> One of the two components of a vector, referring to its size</p>
+
+<p><strong>Direction</strong> One of the two components of a vector</p>
+
+<p><strong>Components</strong> The values within a vector</p>
+
+
+
 <h2 id="the-internet">The Internet</h2>
+
+
 
 <h3 id="the-internet-and-the-world-wide-web">The Internet and the world wide web</h3>
 
@@ -621,6 +718,8 @@ The protocol used to transmit data (TCP/IP) can only work with numbers. Therefor
 
 <p>When connection to the internet is required, the device will be connected to a router or proxy server in order to connect. in this case the IP address of that router or server needs to be a public or routable address in which case it becomes a unique address that is registered under the domain name system.</p>
 
+
+
 <h3 id="ports">Ports</h3>
 
 <p><strong>Port</strong> Used to identify a particular process or application on a network <br>
@@ -645,6 +744,8 @@ The protocol used to transmit data (TCP/IP) can only work with numbers. Therefor
 
 <p><strong>Secure Shell protocol (SSH)</strong> A protocol for remote access to computers</p>
 
+
+
 <h3 id="network-address-translation">Network address translation</h3>
 
 <p>The system that is used to match the private IP addresses with the public ones is called NAT. This has two main advantages. One is that a unique IP address is not needed for every single device on a network, only on the router or server that is physically connected. This means that only the public IP address needs to be registered with the DNS system. The second advantage is that there is an increased level of security as the private IP address is not being broadcast over the Internet, making that device more secure from unauthorised access.</p>
@@ -666,12 +767,16 @@ The protocol used to transmit data (TCP/IP) can only work with numbers. Therefor
 <li>The internal IP address and port are never made public on the external network</li>
 </ul>
 
+
+
 <h3 id="port-forwarding">Port forwarding</h3>
 
 <p>Port forwarding is commonly used when a server inside a private network, with a non-routable IP address, is used to provide services to clients on the Internet. As the server as a non-routable IP address, it cannot be accessed directly from the Internet. Therefore the client on the Internet must use the public IP address of the router that connects the private network with the server on it to initiate a connection. <br>
 This router can be programmed so that requests sent to it on a particular port number are forwarded to a device with a specific IP address within the network. This is port forwarding.</p>
 
 <p><strong>Port forwarding</strong> A method of routing data through additional ports</p>
+
+
 
 <h3 id="sockets">Sockets</h3>
 
@@ -680,6 +785,8 @@ This router can be programmed so that requests sent to it on a particular port n
 <p><strong>Socket</strong> An endpoint of a communication flow across a computer network</p>
 
 <p>Sockets can be created at any time to enable a network connection to be established to or from a computer. </p>
+
+
 
 <h3 id="subnet-masking">Subnet masking</h3>
 
@@ -701,11 +808,15 @@ Data sent to a particular computer will only travel around the parts of the netw
 <p>To identify whether the destination computer is on the same subnet, the sending computer needs to look at the network portion of the destinatoin IP address to see if it is the same as its own. To do this, a subnet mask is used. Each device on the subnet is programmed with the same subnet mask. Within the subnet mask, a value of 1 is assigned to all the bits that are part of the network ID, and 0 to all of the parts which identify the host.  <br>
 The computer will AND the full IP address of the sending computer, and AND its own full IP address, to calculate their network IDs. If they network IDs are equal, data can be sent directly between them.</p>
 
+
+
 <h3 id="ip-address-v4-and-v6">IP address v4 and v6</h3>
 
 <p>As IP v4 was exhausted, it was replaced by IP v6 which uses 128 bits represented as eight groups of four hex numbers separated by colons.</p>
 
 <p>this massively increases the range of numbers available as there are more digits in the number, and hex is being used allowing for a greater range within each group of numbers.</p>
+
+
 
 <h3 id="dynamic-host-configuration-protocol-dhcp">Dynamic host configuration protocol (DHCP)</h3>
 
