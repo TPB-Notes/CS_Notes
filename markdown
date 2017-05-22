@@ -30,7 +30,7 @@
 
 **Hierarchy chart** A diagram that shows the design of a system from the top down
 
-**Structure char** Similar to a hierarchy char with the addition of showing how data is passed around the system
+**Structure chart** Similar to a hierarchy chart with the addition of showing how data is passed around the system
 
 **Top-down approach** A design process in which you start at the top of the process and work down into smaller and smaller sub-processes
 
@@ -434,7 +434,7 @@ Example 4 3 * 6 2 * /
 | Evaluate 6 * 2 | 12, 12 |
 | Evaluate 12 / 12 | 1 |
 
-**In order traversal** A method of extracing data from a binary tree that will result in an infix expression
+**In order traversal** A method of extracting data from a binary tree that will result in an infix expression
 
 **Post-order traversal** A method of extracting data from a binary tree that will result in postfix expressions
 
@@ -444,7 +444,7 @@ Example 4 3 * 6 2 * /
 
 - Create an empty stack for keeping op
 
-### Applications of postifx
+### Applications of postfix
 
 Some languages are specifically designed to be stack-oriented and would therefore be ideally suited to this application.
 In these cases, the interpreter or compiler checks all of the syntax with reference to the postfix notation of each expression.
@@ -477,7 +477,7 @@ Split the array into halves, and repeat on each sub-array until the arrays can n
 Assume that the lists to be merged are already sorted
 
 Compare the first element of each list, adding the new number to the merged list.
-Repeat the process, compargint the first element in each list and placing the lowest item in the merged list
+Repeat the process, comparing the first element in each list and placing the lowest item in the merged list
 
 # Computational thinking
 
@@ -513,8 +513,8 @@ This process involves identifying common characteristics of representations so t
 
 **Procedural abstraction** The concept that all solutions can be broken down into a series of procedures or subroutines
 
-At the design stage it is suficient for the programmer to work out what each procedure will do without defining how it will do it.
-The proceudre may in turn call other proceudres although it does not need to know how these work in order to call them.
+At the design stage it is sufficient for the programmer to work out what each procedure will do without defining how it will do it.
+The procedure may in turn call other procedures although it does not need to know how these work in order to call them.
 This is the basis for top down design.
 Other considerations include what event will trigger the procedure, how procedures will link together, including any possible side effects, and how errors will be handled.
 
@@ -563,7 +563,7 @@ The complexity of the calculations used to generate the displayed information is
 
 **Shift cipher** A simple substitution cipher where the letters are coded by moving a certain amount forwards or backwards in the alphabet
 
-## Turng machines
+## Turing machines
 
 **Turing machine** A theoretical model of computation
 
@@ -582,7 +582,7 @@ Turing machines require:
 
 ### Universal Turing machine
 
-**Universal Turing machine** A machine that can simulate a Turing machine by reading a description of the maching along with the input of its own tape
+**Universal Turing machine** A machine that can simulate a Turing machine by reading a description of the machin along with the input of its own tape
 
 Rather than defining each individual process within a single machine, the universal machine takes two inputs:
 - A description of all the individual Turing machines required to perform the calculations
@@ -621,7 +621,7 @@ the key problem with regular expressions is that they only work when matching or
 
 Consider a binary palindrome. It is not possible to create a regular expression that describes the syntax as there is no regular expression that can describe how each letter is used.
 
-When the counting and matchingis infinite, a context free language is needed.
+When the counting and matching is infinite, a context free language is needed.
 Context free languages can also support notation for recursion and are sometimes a clearer way of defining syntax even where regular expressions can be used.
 
 ### Backus-Naur form (BNF)
@@ -684,7 +684,7 @@ BNF expressions, or any kind of context free language, can be represented as a s
 
 - An oval shape represents a terminal element
 - A rectangular shape represents a non-terminal element and will therefore have another syntax diagram that breaks it down into more detail
-- A rectangular shape with an arrowed patha round it represents a non-terminal element that may be used more than once
+- A rectangular shape with an arrowed path around it represents a non-terminal element that may be used more than once
 
 **Syntax diagram** A method of visualising rules written in a context-free language
 
@@ -704,14 +704,14 @@ $\mathbb{Z} = \{..., -3, -2, -1, 0, 1, 2, 3, ..,\} \text{ The integers}$
 
 **Natural number** A positive integer including zero
 
-**Set building** The process of creatings setse by describing them using notation rather than listing the elements
+**Set building** The process of creating sets by describing them using notation rather than listing the elements
 
 $A = \{x | x \in \mathbb{N} \land x \geq 1\}$
 
 - $A$ is the name of the sets
 - The braces $\{\}$ represent the contents of the set
 - $x$ represents the actual values of the set, defined after the pipe $|$
-- The pipe means such, meaing that the equation after defines the values of $x$
+- The pipe means such, meaning that the equation after defines the values of $x$
 - $\in$ means "is a member of"
 - $\mathbb{N}$ is the natural numbers
 - $\land$ means "and"
@@ -755,7 +755,7 @@ The cardinality of the set is the number of elements in the set.
 
 **Countably infinite set** Sets where the elements can be put into a one-to-one correspondence with the set of natural numbers
 
-**Cartesian product $A\times B$** Combinding the elements of two or more sets to create a set of ordered pairs
+**Cartesian product $A\times B$** Combining the elements of two or more sets to create a set of ordered pairs
 
 **Union $A\cup B$** When two sets are joined and all of the elements of both sets are included in the joined set
 
@@ -800,11 +800,11 @@ It considers the worst-case scenario.
 
 **Intractable problem** A problem that cannot be solved in an acceptable time frame
 
-**Heuristic** A methof for producing a 'rule of thumb' to produce an acceptable solution to intracatable problems
+**Heuristic** A method for producing a 'rule of thumb' to produce an acceptable solution to intractable problems
 
 ### Unsolvable problems
 
-**Unsolvable problem** a problem that it hasbeen proved cannot be solved on a computer
+**Unsolvable problem** a problem that it has been proved cannot be solved on a computer
 
 **Halting problem** An example of an unsolvable problem where it is impossible to write a program that can work out whether another problem will halt given a particular input
 
@@ -816,11 +816,11 @@ It considers the worst-case scenario.
 
 **Natural numbers** A positive integer including zero
 
-**Integer** Any whole posotive or negative number including zero
+**Integer** Any whole positive or negative number including zero
 
 **Rational numbers** Any number that can be expressed as a ratio of integers
 
-**Irrational number** A number that cannot be represented as a fraction or ration as the decimal form will contain an infinite number of values
+**Irrational number** A number that cannot be represented as a fraction or ratio as the decimal form will contain an infinite number of values
 
 **Real numbers** Any positive or negative number with or without a fractional part
 
@@ -828,7 +828,7 @@ It considers the worst-case scenario.
 
 **Cardinal number** A number that identifies the size of something
 
-**Well ordered set** A group of related numbers with a define order
+**Well ordered set** A group of related numbers with a defined order
 
 Ordinal numbers are used to identify the position of data within an ordered set.
 
@@ -857,7 +857,7 @@ Add the columns starting from the right hand side, carrying 11 to the next colum
 
 To multiply in binary, you multiple the first number be each of the digits of the second number in turn, starting from the right hand side.
 This means that you are multiplying each each digit by 0 or 1. 
-You then do the same for the ntext digit, shifting your answers to the left as you would in deciml multiplication.
+You then do the same for the ntext digit, shifting your answers to the left as you would in decimal multiplication.
 
 You can then carry out a binary addition to find the final answer.
 
@@ -883,7 +883,7 @@ The first digit in a two's complement integer has a negative value, and all of t
 
 #### Adding and subtracting using two's complement
 
-Adding numbers together using two's complement is the same as adding numbers together in decfimal. You add up the total and carry values across to the next column.
+Adding numbers together using two's complement is the same as adding numbers together in decimal. You add up the total and carry values across to the next column.
 
 In order to carry out subtractions, the method used is to convert the number to be subtracted to a negative value, and then to add it.
 
@@ -903,11 +903,11 @@ In floating point, the binary point can be moved depending on the number that yo
 Floating point extends the fixed point technique.
 
 A floating point number is made up of two parts, the mantissa and the exponent.
-In binary, the exponent and mntissa are used to allow the binary point to float. They are each twos complement values.
+In binary, the exponent and mantissa are used to allow the binary point to float. They are each two's complement values.
 
-To calculate the value of a floatin point value, we first calculate the value of the mantissa and then multiply it by 2 to the power of the exponent.
+To calculate the value of a floating point value, we first calculate the value of the mantissa and then multiply it by 2 to the power of the exponent.
 
-This is equivelant to finding the value of the exponent, 'floating' the binary point to n places to the right if the exponent is n, and n places to the left if the exponent is -n, before evaluating the binary as a fixed point value.
+This is equivalent to finding the value of the exponent, 'floating' the binary point to n places to the right if the exponent is n, and n places to the left if the exponent is -n, before evaluating the binary as a fixed point value.
 
 ### Underflow and overflow
 
@@ -921,7 +921,7 @@ This is equivelant to finding the value of the exponent, 'floating' the binary p
 
 **Precision** How close a value is to the true value
 
-In order to be normalised, the first bit of the mantissa, after the binary point, should always be 1 for positive integers, or 0 for negative numbers and the bit before the binary point should be the oppposite.
+In order to be normalised, the first bit of the mantissa, after the binary point, should always be 1 for positive integers, or 0 for negative numbers and the bit before the binary point should be the opposite.
 
 A normalised positive floating point number must start 0.1 and a normalised negative floating point number must start 1.0
 
@@ -933,7 +933,7 @@ Consider the number 108. The 8 bit binary equivalent of which is 01101100.
 - The binary point will have to be moved seven places to the right to convert it back to the original number
 - The exponent is therefore 7
 - The two's complement value for 7 is 0111
-- Therefore the normalised representation of108 0.11011000111
+- Therefore the normalised representation of 108 is 0.11011000111
 
 ### Rounding errors
 
@@ -953,11 +953,11 @@ The relative error is the absolute error divided by the true value.
 
 ## Coding systems
 
-**Character code** A binary representation of a particlar letter, number, or special character
+**Character code** A binary representation of a particular letter, number, or special character
 
 ### ASCII and Unicode
 
-The ASCII (America Standard Code for Information Interchange) was aggreed upon. 7 bits of each byte are used to represent 128 characters, while the 8th bit can be used for checking.
+The ASCII (American Standard Code for Information Interchange) was agreed upon. 7 bits of each byte are used to represent 128 characters, while the 8th bit can be used for checking.
 
 ASCII has limitations:
 - 256 characters are not sufficient to represent all of the possible characters, numbers, and symbols
@@ -966,7 +966,7 @@ ASCII has limitations:
 - The range of platforms and programs has increased dramatically with more developers from around the world using a much wider range of characters
 
 
-**Unicode** A standard binary coding system that has superceded ASCII
+**Unicode** A standard binary coding system that has superseded ASCII
 
 Unicode is being constantly developed and updated to include more languages and characters from around the world.
 
@@ -996,7 +996,7 @@ This principle can be applied on a larger scale. The Columbia space shuttle had 
 
 Check digits are a common way of checking data, often when they are being entered into a computer.
 For example, check digits are used on the barcodes printed on goods at a supermarket.
-Like a parity bit, a check digit is a value that is added to the end of a number to try to ensre that the number is not corrupted.
+Like a parity bit, a check digit is a value that is added to the end of a number to try to ensure that the number is not corrupted.
 
 The check digit is created by taking the digits that make up the number itself and using them in some way to create a single digit. The simplest, but most error prone is to add the digits of the number together and keep on adding the digits until you have only a single digit remaining.
 
@@ -1044,7 +1044,7 @@ Digital data are often represented as discrete waves.
 
 #### Analogue to digital conversions
 
-The problem arises when we need to input analogue data into the computer or when we want to output ditial data from the computer in analogue form.
+The problem arises when we need to input analogue data into the computer or when we want to output digital data from the computer in analogue form.
 In order to do this, a converter is need.
 
 One example of an analogue to digital converter (ADC) is a microphone. The microphone inputs sound in the form of changes in air pressure and then converts them into electrical signals.
@@ -1071,7 +1071,7 @@ MIDI files have numerous advantages over other digital audio formats:
 
 ### Sound sampling and synthesis
 
-Sampling is the process of converting analgue sound waves into digital form to create what is commonly known as digitised or digital sound.
+Sampling is the process of converting analogue sound waves into digital form to create what is commonly known as digitised or digital sound.
 This is sometimes referred to as analogue to digital conversion.
 An analogue sound wave is infinitely variable so in order to store this digitally, a series of reads at fixed intervals are taken from the wave in order to create the discrete data values that are defining a feature of binary data.
 These reading are then stored as binary codes.
@@ -1081,7 +1081,7 @@ This is called sampling because you do not record every single change in amplitu
 
 The amplitude of the wave is only recorded at the point where each sample is taken. Other variations in the amplitude are not recorded.
 Therefore, to create an exact replica of the analogue sound would require a sample to be taken every time the amplitude of the wave changed even by a small amount.
-However, the humar ear doesn't notice very small changes, so sound can be faithfully created with fewer samples.
+However, the human ear doesn't notice very small changes, so sound can be faithfully created with fewer samples.
 Taking more samples allow more accurate reproduction of the original analogue sound.
 
 ### Data compression
@@ -1110,11 +1110,11 @@ In a high frequency image the human eye will not notice slight changes to large 
 ## Encryption
 
 Encryption is the process of scrambling data so that it cannot be understood by a third party unless they know the encryption method and key used. 
-Decryption is the process of turning the scrambled data back into data that can be understodd. Data is encryped before it is transmitted and decrypted when it is received.
+Decryption is the process of turning the scrambled data back into data that can be understood. Data is encrypted before it is transmitted and decrypted when it is received.
 
-**Encryption** The process of turning plaintext into scrambled ciphertext, which can only be understood if it is decryped
+**Encryption** The process of turning plaintext into scrambled ciphertext, which can only be understood if it is decrypted
 
-**Decryption** The process of deciphering encryped data or messages
+**Decryption** The process of deciphering encrypted data or messages
 
 **Plaintext** Data in human-readable form
 
@@ -1136,7 +1136,7 @@ Decryption is the process of turning the scrambled data back into data that can 
 
 **Frequency analysis** The study of how often different letters or phrases are used
 
-The Caesar cipher can be easily borken as certain letters are more frequently used than others and certain combinations of letters are also common.
+The Caesar cipher can be easily broken as certain letters are more frequently used than others and certain combinations of letters are also common.
 
 ### Transposition cipher
 
@@ -1148,7 +1148,7 @@ The letters of the message are transposed or rearranged to form an anagram. You 
 
 ### Vernam cipher
 
-The Vernam cipher is an example of a class of encryption techniques konw as one-time pad techniques. The key that is used is a sequence of letters that should be as long as the plaintext that is being encoded. The key can be recorded on a pad, although in the Vername case the key was written on a punched tape for input into the telex device.
+The Vernam cipher is an example of a class of encryption techniques known as one-time pad techniques. The key that is used is a sequence of letters that should be as long as the plaintext that is being encoded. The key can be recorded on a pad, although in the Vernam case the key was written on a punched tape for input into the telex device.
 
 **One time pad** A key that is only used once to decrypt a message and is then discarded
 
@@ -1160,7 +1160,7 @@ The ciphertext can be decrypted  using the same operation with the same key.
 
 ### Computational security
 
-**Computational security** A concept of how secure data encryptiuon is
+**Computational security** A concept of how secure data encryption is
 
 **Computational hardness** The degree of difficulty in cracking a cipher
 
@@ -1202,7 +1202,7 @@ There are four main types of system software:
 This covers software that is written to carry out certain housekeeping tasks on the computer.
 They are normally supplied with the operating system and include
 
-**Utility programs** Programs that perform specific common tasks related to running the computer e.g. ziping files
+**Utility programs** Programs that perform specific common tasks related to running the computer e.g. zipping files
 
 #### Library programs
 
@@ -1229,10 +1229,10 @@ Whereas some utility programs are non-essential, library programs tend to be cri
 ### Operating system software
 
 The operating system carries out many tasks, such as:
-- Controlling the start up configuration of the computer
+- Controlling the start-up configuration of the computer
 - Recognising that a mouse button has been pressed and deciding what action to take
 - Sending signals to the hard disk controller, telling it what program to transfer to memory
-- Deciding which sections of memory to allocate to the program you are intending to use and manages memory to ensure all of the programs you want to run are allocated the sapce they need
+- Deciding which sections of memory to allocate to the program you are intending to use and manages memory to ensure all of the programs you want to run are allocated the space they need
 - Attempting to cope with errors as and when they occur
 - Making sure the computer shuts down properly
 - Controlling print queues
@@ -1240,18 +1240,18 @@ The operating system carries out many tasks, such as:
 
 ### Resource management
 
-**Resource mangagement** How an operating system manages hardware and software to optimise the performance of the computer
+**Resource management** How an operating system manages hardware and software to optimise the performance of the computer
 
 **Processor** A device that carries out computation on data by following instructions, in order to produce an output
 
 **Scheduling** A technique to ensure that different users or different programs are able to work on the same computer system at the same time
 
 The simplest way that an operating system can schedule access to the processor is to allocate each task a time slice. This means that each task is given an equal amount of processor time.
-Time slicing is a crude system because a prticular task might not need all or even any of its aloted time slice with the processor.
+Time slicing is a crude system because a praticular task might not need all or even any of its alloted time slice with the processor.
 
 ### Managing input output devices
 
-The operatins system controls the way in which the various input and output devices are allocated, controlled, and used by the programs that are using them, such as:
+The operating system controls the way in which the various input and output devices are allocated, controlled, and used by the programs that are using them, such as:
 - Allocating print jobs to printers
 - Rendering the windows, frames, and dialog boxes to the screen
 - Controlling the read-write access to the hard disk
@@ -1260,7 +1260,7 @@ Accessing some devices is a relatively slow process compared to the speed at whi
 
 Every input/output device has a device driver, which is a piece of software that enables the device to communicate with the OS. Device drivers are often built in to the OS or installed when new devices are attached. When the OS starts up it loads the various driver for all of the input/output devices it detects.
 
-### Memory mangagement
+### Memory management
 
 **Memory management** How the operating system uses RAM to optimise the performance of the computer
 
@@ -1389,13 +1389,13 @@ Another important feature is that the IO devices themselves respond relatively s
 
 **Harvard architecture** A technique for building a processor that uses separate buses and memory for data and instructions
 
-The advantage of the Harvard architecture is that instructions and data are handled more quickly as they do not have to share the same bus. T
-Harvard architecture is widely used on embedded systems such as mobile pohones, burglar alarms, etc, where there is a specific use, rather than being used within general purpose PCs.
+The advantage of the Harvard architecture is that instructions and data are handled more quickly as they do not have to share the same bus. 
+The Harvard architecture is widely used on embedded systems such as mobile phones, burglar alarms, etc, where there is a specific use, rather than being used within general purpose PCs.
 
 Many such devices use digital signal processing. The idea of DSP is to take continuous real world data such as audio or video and then to compress it to enable faster processing. Chips that are optimised for DSP tend to have much lower power requirements.
 
 
-## The stored progam concept and processor components
+## The stored program concept and processor components
 
 **Stored program concept** The idea that instructions and data are stored together in memory
 
@@ -1422,7 +1422,7 @@ The ALU is sent an operation code and the operands.
 
 ### The clock 
 
-All copmuters have an internal clock which generates a signal that is used to synchronise the operation of the processor and the movement of data around the other components of the computer
+All computers have an internal clock which generates a signal that is used to synchronise the operation of the processor and the movement of data around the other components of the computer
 
 **Clock** A device that generates a signal used to synchronise the components of a computer
 
@@ -1447,7 +1447,7 @@ The control unit needs somewhere to store details of the operation being dealt w
 **Memory address register** Stores the location of the address that data is either written to or copied from by the processor
 
 A register must be large enough to hold an instruction.
-Some registers are generall purpose while others are used for a specific purpose.
+Some registers are general purpose while others are used for a specific purpose.
 
 The status register keeps track of the status, such as if an overflow occurred during an arithmetic register.
 
@@ -1456,14 +1456,14 @@ The interrupt register is another type of status register, it stores details of 
 ### The fetch-decode-execute cycle
 
 - Fetch: The program counter holds the address of the next instruction. The processor sends this address along the address bus to main memory. The contents of the memory location at that address are sent via the data bus to the current instruction register and the program counter is incremented. The details of addresses are initially loaded into the memory address register and the data is initially loaded into the memory buffer register. Some instructions need to load a number of words, so they may need to be fetched as successive parts of a single instruction.
-- Execute: THe processor then takes the instruction from the current instruction register and decides what to do with it by referring to the instruction set.This might be to send the contents of the memory buffer register to the arithmetic logic unit. Once the instruction that has just been taken from memory has been decoed, the processor carries out the instruction. It then goes back to the top of the cycle and fetches the next instruction. The results of any calculations are written either to a register or a memory location.
+- Execute: THe processor then takes the instruction from the current instruction register and decides what to do with it by referring to the instruction set.This might be to send the contents of the memory buffer register to the arithmetic logic unit. Once the instruction that has just been taken from memory has been decoded, the processor carries out the instruction. It then goes back to the top of the cycle and fetches the next instruction. The results of any calculations are written either to a register or a memory location.
 
 ### Factors affecting processor performance
 
 - Clock speed: It indicates how fast each instruction will be executed
 - Bus width: The processor needs to optimise the use of the clock pulse. One way of doing this is to increase the bus width.
 - Word length: Related to the data bus width. Computer systems with a greater word length can process more data at once
-- Multiple core: Several processors can be used to increae performance. The term core is used to define the components that enable instructions to be fetched and executed
+- Multiple core: Several processors can be used to increase performance. The term core is used to define the components that enable instructions to be fetched and executed
 - Cache: Caching is a technique where instructions and data that are needed frequently are placed into a temporary area of memory separate from main memory. The cache can be accessed much more quickly than main memory
 
 ### Interrupts
@@ -1475,7 +1475,7 @@ An additional step is added to the fetch-execute cycle. Between the completion o
 If an interrupt has occured the processor will stop whatever it is doing to service the interrupt. This is done using the interrupt service routine.
 
 
-The contents of the registers are placed onto the system stack. Once the interrupt has been processed the CPU will retreive the values from the stack and place them in the correct registers.
+The contents of the registers are placed onto the system stack. Once the interrupt has been processed the CPU will retrieve the values from the stack and place them in the correct registers.
 
 **Interrupt service routine** A routine to handle a particular type of interrupt
 
@@ -1483,7 +1483,7 @@ The contents of the registers are placed onto the system stack. Once the interru
 
 #### Priorities
 
-Someomes the interrupt routine may be interruped.
+Sometimes the interrupt routine may be interrupted.
 In this case the processor will either place details of its current task on the stack or it will assess the priority of the interrupts and decide which one needs to be serviced first. Assigning different interrupts priority levels means that the most important signals are dealt with first.
 
 | Level | Type | Possible causes |
@@ -1546,7 +1546,7 @@ When an interrupt occurs, the processor identifies what kind of interrupt it is,
 
 ### Digital camera
 
-**Digital camera** A device for creating images of photographs, which can be printed or transferred onto a computer tobe manipulated and stored
+**Digital camera** A device for creating images of photographs, which can be printed or transferred onto a computer to be manipulated and stored
 
 - When a photograph is taken the shutter opens and lets light in through the lens
 - The light is focused onto a sensor, which is usually either a charge coupled device or a complementary metal oxide semiconductor
@@ -1556,9 +1556,9 @@ When an interrupt occurs, the processor identifies what kind of interrupt it is,
 - The data are typically stored on removable storage devices, usually referred to as flash memory
 - Data are usually stored in compressed files
 - RAW files can also be generated, which are uncompressed and therefore contain all of the data from the original photograph
-- This digital data can no be decoded and manipulated using specialised software
+- This digital data can be decoded and manipulated using specialised software
 
-**RGB filter** red, gree, and blue filters that light passes through in order to create all other colours
+**RGB filter** red, green, and blue filters that light passes through in order to create all other colours
 
 **Compression** The process of reducing the size of a file
 
@@ -1575,7 +1575,7 @@ When an interrupt occurs, the processor identifies what kind of interrupt it is,
 - The signal is decoded into a form that can then be interpreted by software
 
 There are many different types of barcode. 
-The most common is the uinveral product code which uses a series of black and white lines of four different widths that are encoded to represent the values 1 to 4. The numbers are below for a manual override and include a check digit.
+The most common is the universal product code which uses a series of black and white lines of four different widths that are encoded to represent the values 1 to 4. The numbers are below for a manual override and include a check digit.
 
 Barcodes are used primarily for inputting product details at the point of sale.
 
@@ -1585,11 +1585,11 @@ More recently, the same technology has been applied to codes that are made up of
 
 **Radio frequency identification** A microscopic device that stores data and transmits it using radio waves. Usually used in tags to track items
 
-- The tag, which can be microscopically small, contains a chipe, which contains the data about the item and a modem to modulate and demodulate the radio signals
+- The tag, which can be microscopically small, contains a chip, which contains the data about the item and a modem to modulate and demodulate the radio signals
 - The tag also contains an antennae to send and receive signals
-- Tags can be either active, which means that they have their ownpower source, or passive, which means that they will pick up electromagnetic power when they are in range of an RFID reader
+- Tags can be either active, which means that they have their own power source, or passive, which means that they will pick up electromagnetic power when they are in range of an RFID reader
 - Signals and therefore data can be transmitted in both directions using radio frequencies. This may be over a short or long distance depending on what the tags are being used for and how they are powered. The typical range of RFID tags is between 1 and 100 metres
-- Tags may be used to simpy track the physical location of the tagged item or the item may transmit data back
+- Tags may be used to simply track the physical location of the tagged item or the item may transmit data back
 
 Example use cases
 - Tracking individuals, particularly vulnerable adults
@@ -1608,7 +1608,7 @@ Example use cases
 - Paper is passed over the drum and by giving the paper the opposite charge, the toner is transferred to the paper
 - The paper is heat treated to fuse the toner onto the paper
 
-To achieve colour printing, four different coloured toners are used, and the process of transferring the toner to the drum is repeated for each colour. In some prineters, a transfer belt is used to hold the four-colour image and therefore transfer it just once from the belt to the paper. 
+To achieve colour printing, four different coloured toners are used, and the process of transferring the toner to the drum is repeated for each colour. In some printers, a transfer belt is used to hold the four-colour image and therefore transfer it just once from the belt to the paper. 
 When printing, four colours are needed: cyan, magenta, yellow, and black.
 
 ### Magnetic hard disk
@@ -1720,7 +1720,7 @@ When creating a relational database, you should replace any many to many relatio
 **Normalisation** The process of ensuring that a relational database is structured efficiently
 
 - Redundant data occurs when the same field is unnecessarily duplicated in two or more tables. For example, many different customers may download the same movie. If all the movie details were stored every time it was downloaded, much of the data would be redundant as we only need to store the details once and then link those details to each customer who downloaded it
-- Storing the same data multiple times can also lead to the problem of data inconcistency, for example we might store the same customer's details several times but the telephone number stored might differ
+- Storing the same data multiple times can also lead to the problem of data inconsistency, for example we might store the same customer's details several times but the telephone number stored might differ
 - Storing data at an atomic level means that they cannot be further decomposed. For example, a table may contain an attribute called *Address* that stores the full address of the customer. At an atomic level this could be decomposed into several attributes, for example *HouseNumber*, *Street*, *Town*, *Country*, etc.
 
 When a database is constructed according to these rules it is said to be in normal form.
@@ -1729,7 +1729,7 @@ there are various levels of normal form and the level that a programmer needs to
 
 ### First normal form
 
-First normal form is achieved by ensuring that a table does not containg repeating attributes or repeating groups and that all of the data in the table is atomic.
+First normal form is achieved by ensuring that a table does not containing repeating attributes or repeating groups and that all of the data in the table is atomic.
 
 | CustomerID | CustomerName | Address | Date | MovieID | Title | Genre | Format | FileType |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -1957,7 +1957,7 @@ Most databases work on the model that the data will fall into columns and rows.
 
 ### Structured data
 
-This data can be defined using traditional database techniques using fields and recors. It is possible to give each data item a field name and type.
+This data can be defined using traditional database techniques using fields and records. It is possible to give each data item a field name and type.
 
 **Structured data** Data that fits into a standard database structure of fields and records
 
@@ -2027,24 +2027,24 @@ The Credit Account Information Sharing database stores over 400 million records 
 
 **Concurrence** The concept of two users trying to access the same data item at the same time
 
-# Functional progamming
+# Functional programming
 
-The functional programming paradigm is an example of a declerative programming language where all the algorithms call functions. This means that the lines of code look and behave like mathematical functions, requirning an input and producing an output.
+The functional programming paradigm is an example of a declarative programming language where all the algorithms call functions. This means that the lines of code look and behave like mathematical functions, requiring an input and producing an output.
 
 There is one main function, which in turns calls further functions in order to achieve a specific task. 
 
 **Functional programming paradigm** A language where each line of code is made up of calls to a function, which in turn may be made up of other functions, or result in a value
 
-**Declerative programming langauges** Languages that declare or specify what properties a result should have
+**Declarative programming languages** Languages that declare or specify what properties a result should have
 
-**Procedural programming langauges** Languages where the programmer specifies the steps that must be carried out in order to achieve a result
+**Procedural programming languages** Languages where the programmer specifies the steps that must be carried out in order to achieve a result
 
 In functional programming:
-- Program requiremenets may be better defined as a series of abstractions based on functions rather than a more complex series of steps
+- Program requirements may be better defined as a series of abstractions based on functions rather than a more complex series of steps
 - Broader abstractions can lead to fewer errors during implementation
 - functions can be applied at any level of data abstraction making them highly re-usable within a program
-- Functional code is easier to test and debig as each function cannot have any side effects
-- There are no concurrency issues as datais modified by two thrads at the same time
+- Functional code is easier to test and debug as each function cannot have any side effects
+- There are no concurrency issues as data is modified by two threads at the same time
 - In multi processor environments the sequence that functions are evaluated in is not critical
 
 ## Function types
@@ -2059,7 +2059,7 @@ A function type refers to the way in which the expression is created. All functi
 **Higher order function** A function that takes a function as its inputs or creates a function as its output
 
 A function which can accept another function as an argument is a higher order function.
-The threemost common of which are map, foldee, and filter.
+The three most common of which are map, fold, and filter.
 
 ## Function application
 
@@ -2067,7 +2067,7 @@ The threemost common of which are map, foldee, and filter.
 
 ## Partial function application
 
-**Partical application** The process of applying a function creating an intermediate function by fixing some of the arguments to the function
+**Partial application** The process of applying a function creating an intermediate function by fixing some of the arguments to the function
 
 ## Function composition
 
@@ -2111,15 +2111,15 @@ In general, the more you can involve the end users, the less likely you are to d
 ### Prompts for a new system
 
 There are many reasons for creating a new computer system.
-Many of these are based on the ever-incraesing demands that are made of existing system and the ever-changing advances in computer technology.
+Many of these are based on the ever-increasing demands that are made of existing system and the ever-changing advances in computer technology.
 
-- Some existing systems simply cannot cope with the increased volume of data that they are being asked to handle. For example, the way in which a bank maintains its data has change beyond all recognition in the last 20 years, and banks have spent millions of pounds updating their systems
+- Some existing systems simply cannot cope with the increased volume of data that they are being asked to handle. For example, the way in which a bank maintains its data has changed beyond all recognition in the last 20 years, and banks have spent millions of pounds updating their systems
 - New technology has meant that existing systems soon become outdated. For example, at one time it took a lot of time and effort to book a holiday. Now it can all be done in real time with the flights you want booked in minutes
-- The current system may be inflexible or inefficient. For example, the number of people flying is increasing every year and this has placed pressure on the airport immigration authorities. Computer-readable passports allow immigration staff far greater control and instanc access to details of the person in fron of them
-- New techonology has created new opportunities. You have only to look at the way the use of the Internet has exploded to realise how many new opportunities such as e-commerce and e-banking there are. Other developments such as computer control and GPS have created other totally new fields. For example, cards are becoming increasingly autmomated. Current technology enables cars to park themselves
+- The current system may be inflexible or inefficient. For example, the number of people flying is increasing every year and this has placed pressure on the airport immigration authorities. Computer-readable passports allow immigration staff far greater control and instant access to details of the person in front of them
+- New technology has created new opportunities. You have only to look at the way the use of the Internet has exploded to realise how many new opportunities such as e-commerce and e-banking there are. Other developments such as computer control and GPS have created other totally new fields. For example, cards are becoming increasingly automated. Current technology enables cars to park themselves
 - Commercial reasons. Many new systems are created in order to generate demand from customers. There isn't necessarily a need for a new system but companies introduce them because customers will buy them
 - New platforms and operating systems. Businesses create new systems to take full advantage of new platforms and operating systems. For example, thousands of new apps have been created for iOS and Android devices
-- Increased processing power. As processing power increases, new software is written to take advantage of it. Some applications taht are processor intensive may become feasible with the advent of faster processors.
+- Increased processing power. As processing power increases, new software is written to take advantage of it. Some applications that are processor intensive may become feasible with the advent of faster processors.
 - Increased network power. Many applications are developed to take advantage of ever increasing connectivity. For example, many of the leading applications written over the last few years have been based on social media
 
 ## Methods of gathering information
@@ -2128,21 +2128,21 @@ If the problem that you care going to tackle is based on an existing system then
 Asking for opinions about a possible new system is a good idea too.
 there are several ways in which you can gather data about an existing system:
 - Interview people who are involved with the current system. This will probably include the systems administrator, the people actually using the system, and their customers or clients. Although this can be a time-consuming process, talking to people who are actually using the existing system will give valuable first-hand knowledge and you can follow up on any comments that they might make. A drawback is that each person you talk to may give you a very personal view of the system
-- Unless they are carefully structured the data collected from an interview can be hard to make use of. Asking someont to fill in a carefully designed questionnaire or carrying out a survey will allow you to carry out a more accurate analysis of the responses, but these tend to restrict the data you gather to definite, closed answers. Questionnairs allow you to gather a lot of data relatively quickly
-- Althought it can be very time consuming, observation of current practices will help to identify problem areas. It is objective rather than subjective and you may spot something that everyone else has missed
-- Examination of the current system including the files, paperwork and processes used will help to identify the data requiremenets of the new system. It will also help with the creation of the HCI of the new system. This process will also help you to see the overall scope of the problem
+- Unless they are carefully structured the data collected from an interview can be hard to make use of. Asking someone to to fill in a carefully designed questionnaire or carrying out a survey will allow you to carry out a more accurate analysis of the responses, but these tend to restrict the data you gather to definite, closed answers. Questionnaires allow you to gather a lot of data relatively quickly
+- Although it can be very time consuming, observation of current practices will help to identify problem areas. It is objective rather than subjective and you may spot something that everyone else has missed
+- Examination of the current system including the files, paperwork and processes used will help to identify the data requirements of the new system. It will also help with the creation of the HCI of the new system. This process will also help you to see the overall scope of the problem
 
 ## Feasibility study
 
 **Feasibility study** An analysis of whether it is possible or desirable to create a system
 
-A feasibility study is a preliminary report to the person that asked for the new system in the first place. It will identify possible solutions and suggest the best way forward. The report will indicate how practical a solution is in terms of time and other resoruces, such as the availability of suitable software and hardware and the abilities of the end user to cope with the proposed method of solution.
+A feasibility study is a preliminary report to the person that asked for the new system in the first place. It will identify possible solutions and suggest the best way forward. The report will indicate how practical a solution is in terms of time and other resources, such as the availability of suitable software and hardware and the abilities of the end user to cope with the proposed method of solution.
 
 Possible solutions might include doing nothing, having bespoke software written for you, writing software yourself or buying an existing package and tailoring it to your needs.
 
 ## Design
 
-Before work can start on the actual creation of the solution, the availability of appropriate hardware and software should be assessed. The choice of hardware will be driven by the users' needs and by the way in which data will be manipulated and stored. Work will begion on the file structures and algorithms that are to be used.
+Before work can start on the actual creation of the solution, the availability of appropriate hardware and software should be assessed. The choice of hardware will be driven by the users' needs and by the way in which data will be manipulated and stored. Work will begin on the file structures and algorithms that are to be used.
 
 Most big projects are far too large to be considered as one complete problem.
 The best solution is often to break them down into smaller modules.
@@ -2156,7 +2156,7 @@ It makes more sense to solve the overall problem first before considering screen
 
 **Top-down design** Related to the modular approach, this starts with the main system at the top and breaks it down into smaller and smaller units like a tree
 
-**Modular design** A method of system designt that breaks a whole system down into smaller units or modules
+**Modular design** A method of system design that breaks a whole system down into smaller units or modules
 
 ## Data flow diagram
 
@@ -2172,14 +2172,14 @@ It makes more sense to solve the overall problem first before considering screen
 At this state, a description f the algorithms that will be used should be included. These will not be fully formed lines of code as it is only the design stage. For example, if search or sort algorithms are needed, they can be identified at this stage.
 
 It may be appropriate to work the algorithms into pseudo-code that reflects the programming language being used. For example, if a functional programming language is being used, the main functions should be identified.
-If a relational database is being used, them main SQL statementss should be identified.
+If a relational database is being used, them main SQL statements should be identified.
 
 ## Data dictionary 
 
 **Data dictionary** A list of all the data being used in the system including name, length, data type, and validation
 
-Details of the data to be stored, incuding the data type, length, title, and any validation checks, will be stored in a data dictionary.
-this can be seen as a database about the database. It holds background details but not the data iteslf.
+Details of the data to be stored, including the data type, length, title, and any validation checks, will be stored in a data dictionary.
+this can be seen as a database about the database. It holds background details but not the data itself.
 
 ## Variables tables and data structures
 
@@ -2189,20 +2189,20 @@ It is important to decide what variables a program will need and what purpose th
 
 ## Volumetrics
 
-The volume of data that a system will be asked to handle both now and in the future will have a bearing on how the progammer decides to store and handle the data. They will need to consider the throughput of data. How many transactions the system will need to cope withi in a given time span, and also how much the data the system will need to store at any one time. This will affect the storage media that is used, and it will also be a consideration when back-up strategies are being decided.
+The volume of data that a system will be asked to handle both now and in the future will have a bearing on how the programmer decides to store and handle the data. They will need to consider the throughput of data. How many transactions the system will need to cope with in a given time span, and also how much the data the system will need to store at any one time. This will affect the storage media that is used, and it will also be a consideration when backup strategies are being decided.
 The programmer will also need to consider how many users will be will be allowed to access the files and programs at one time.
 
-It is important to realise that the databses that most students see in their time at school or college are generally small. Even a pupil database in a school with 1200 pupiles is very small compared to the high street banks which have millions of customers each with hundreds of fields of data stored about them.
+It is important to realise that the databases that most students see in their time at school or college are generally small. Even a pupil database in a school with 1200 pupils is very small compared to the high street banks which have millions of customers each with hundreds of fields of data stored about them.
 The computers used by the DVLA store details of well over 20 million cars which means the planning needed for this project is very different to planning how the secretary of a swimming club will store their data.
 
 ## The human computer interface
 
-The human computer interface is the term given to any form of communication between a computer and its user. For the majority of us this might seem limited to the computer screen with its familiar graphical user interface, but it can also include the layout of buttons on a mobile phone or house alarm system and the way informatin is preented on a tablet or smart phone or the flight controls of a new aircraft.
+The human computer interface is the term given to any form of communication between a computer and its user. For the majority of us this might seem limited to the computer screen with its familiar graphical user interface, but it can also include the layout of buttons on a mobile phone or house alarm system and the way information is presented on a tablet or smart phone or the flight controls of a new aircraft.
 
 There are a number of aspects that need to be considered when designing an effective HCI:
-- Ease of use: There is no point creating sophisticated sofrware if the functions are hidden behind a series of screens and button presses. A good HCI will feel intuitive
-- Target audience: What suits a chlid might not necessarily suit an adult so it is important that the programmer is aware of who the end user is going to be
-- Technology: There is little point in creating a screen layout that works comfortably on a 21 inch screen if the target audience mostly use tablets and smart phones
+- Ease of use: There is no point creating sophisticated software if the functions are hidden behind a series of screens and button presses. A good HCI will feel intuitive
+- Target audience: What suits a child might not necessarily suit an adult so it is important that the programmer is aware of who the end user is going to be
+- Technology: There is little point in creating a screen layout that works comfortably on a 21 inch screen if the target audience mostly use tablets and smartphones
 - Ergonomics: The interface should be 'comfortable' to use. This is important if the user is likely to be sitting with the interface for a long period of time, for example, an airplane pilot or tele-sales operative
 
 ## Implementation
@@ -2211,15 +2211,15 @@ This stage is when the application is actually written creating the fully workin
 
 **Implementation** The third stage of development where the actual code and data structures are created
 
-It is important ot realise that systems development has to be a responsive process and that the developer may need to respond to issues as they arise throughout the development process.
+It is important to realise that systems development has to be a responsive process and that the developer may need to respond to issues as they arise throughout the development process.
 
 ## Prototypes
 
-Creating a solution to a problem can be very costly both in terms of finance and time. There is little point in presenting the end user with a completed project if they are going to ask you to atler various details. In this case it would be a good idea to produce a prototype.
+Creating a solution to a problem can be very costly both in terms of finance and time. There is little point in presenting the end user with a completed project if they are going to ask you to alter various details. In this case it would be a good idea to produce a prototype.
 
 **Prototype** A stripped down version of a whole system built at the design stage to test whether the concept works
 
-The functionality of a prototype may vary depending on the nature of the project. For example, the human-computer interface may be very well developed in the prototype and quite closelfy reflect the finished system. However, the funtionality behind it may be inomplete.
+The functionality of a prototype may vary depending on the nature of the project. For example, the human-computer interface may be very well developed in the prototype and quite closely reflect the finished system. However, the functionality behind it may be incomplete.
 
 At this stage the user is asked to comment on the product so far, and the will check to make sure all the major functions work as expected.
 
@@ -2228,9 +2228,9 @@ At this stage the user is asked to comment on the product so far, and the will c
 
 It is important that the system is tested to make sure it performs as expected. There are a number of test strategies that can be used and it is important to understand that any testing plant must include tests that are carried out as the code is written and not just at the end.
 
-Test data are data that generates a known result, and test data will be need to be devised that tests ever aspect of the solution from the expected responses to the extermes that humans can subject a computer program to.
+Test data are data that generates a known result, and test data will be need to be devised that tests every aspect of the solution from the expected responses to the extremes that humans can subject a computer program to.
 
-As individual units or modules are completed they are testet to ensure they carry out the functions they contain. As the project proceeds, modules can be fitted together and at this stage integration testing takes place.
+As individual units or modules are completed they are teste to ensure they carry out the functions they contain. As the project proceeds, modules can be fitted together and at this stage integration testing takes place.
 This process makes sure that the modules work together. A lot of these procedures make use of test data.
 
 Typically, three types of test data are used:
@@ -2252,7 +2252,7 @@ Blackbox testing involves entering test data into a routine or procedure and che
 
 **Unit testing** Testing carried out on just one module or component of the whole system
 
-White box testing involves tetsing every aspect of a routine or procedure. Whilst black box testing is concerned with testing the data handling, white box testing considers all the other processes that are involved- for example, how the program reacts if it fails to find a suitable priner. White box testing checks all pathways through the code, looking inside it and potentially adding extra commands.
+White box testing involves testing every aspect of a routine or procedure. Whilst black box testing is concerned with testing the data handling, white box testing considers all the other processes that are involved- for example, how the program reacts if it fails to find a suitable printer. White box testing checks all pathways through the code, looking inside it and potentially adding extra commands.
 
 Unit testing makes sure each unit carries out the function it has been designed for. It incorporates both black box and white box testing.
 
@@ -2265,31 +2265,31 @@ System testing involves testing the system as a complete unit rather than as ind
 **System testing** A range of tests carried out on the system once it has been completed
 
 Alpha testing is carried out on the finished system. This involves creating test data in-house. This test data will try to cover all the possible eventualities, so they will allow the system to be tested under normal conditions. 
-The benefits of this process are thaty any problems that are found can be rectified before true live data are used by the end usre. Another benefit of using a known set of test data is that if necessary the system can be stopped and restarted.
+The benefits of this process are that any problems that are found can be rectified before true live data are used by the end user. Another benefit of using a known set of test data is that if necessary the system can be stopped and restarted.
 
-Some program developers will release an early or beta version of their new program to their potential usres. At this stage the software is bound to have 'bugs' in it and the users are expected to send details of the problems they have encountered back to the programmers for them to resolve.
+Some program developers will release an early or beta version of their new program to their potential users. At this stage the software is bound to have 'bugs' in it and the users are expected to send details of the problems they have encountered back to the programmers for them to resolve.
 
-The benefits of this system are that passsing your software to a number of people that have not been involved with the development will mean the testers will all use the system in slightly different ways and so highlight faults that might not have been found by normal means.
+The benefits of this system are that passing your software to a number of people that have not been involved with the development will mean the testers will all use the system in slightly different ways and so highlight faults that might not have been found by normal means.
 
-Althugh the developers will test the system they have developed as thoroughly as possible, it is the endusers that need to be satisfied that the solution does what they wanted it to.
-Acceptance testing is carried out by the intended user. They enter their own lvie data and make sure the system matches the specification that was agreed with the program writers.
+Although the developers will test the system they have developed as thoroughly as possible, it is the end users that need to be satisfied that the solution does what they wanted it to.
+Acceptance testing is carried out by the intended user. They enter their own live data and make sure the system matches the specification that was agreed with the program writers.
 
 Some problems may only come to light some time after the system has been implemented by the user. These might include issues involving the volume of data the system is asked to cope with. Problems such as these will be resolved as part of the systems maintenance.
 
 ## Evaluation
 
-The final stage of the system development is evaluation. The solution that has been created was designed to match the specification that was agreed with the user. An evaluation compares the actul outcome with this specification. it should also contain suggestions for future improvements. it is these improvements and refinements that start off the whole cycle all over again. Evaluation may take place over an extended period of time. In fact, many systems are constantly being evaluated. There may be several criteria used to evaluate a system.
+The final stage of the system development is evaluation. The solution that has been created was designed to match the specification that was agreed with the user. An evaluation compares the actual outcome with this specification. it should also contain suggestions for future improvements. it is these improvements and refinements that start off the whole cycle all over again. Evaluation may take place over an extended period of time. In fact, many systems are constantly being evaluated. There may be several criteria used to evaluate a system.
 
 **Evaluation** The final stage of system development where the system is judged according to certain criteria
 
-- Funcionality: Does it do what it is supposed to?
+- Functionality: Does it do what it is supposed to?
 - Ease of use: this is not the same as 'easy to use' but it means that the level of complexity is appropriate to the user
 - Ease of implementation: How easy was it to transfer from the old system to the new system?
 - Reliability: A measure of how much the system is 'up' or 'down'
 - Performance: Does the system meet its performance criteria, which might relate. e.g. the speed of operation or the amount of data it can handle
-- Cost effectivenes: Refers to how much it costs to implement the solution and whether the cost is justified
+- Cost effectiveness: Refers to how much it costs to implement the solution and whether the cost is justified
 - Ease of maintenance and adaptability: How easy is it to fix faults or add new modules?
-- Longetivity: How future-proof is the system?
+- Longevity: How future-proof is the system?
 
 
 
