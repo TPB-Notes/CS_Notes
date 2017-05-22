@@ -1509,9 +1509,162 @@ When an interrupt occurs, the processor identifies what kind of interrupt it is,
 
 ## The processor instruction set and addressing modes
 
+
+**Instruction set** the patterns of 0s and 1s that a particular processor recognises as commands, along with their associated meanings
+
+**Opcode** An operation code or instructions used in assembly language
+
+**Operand** A value or memory address that forms part of an assembly language instruction
+
+**Addressing mode** The way in which the operand is interpreted
+
+**Assembly language** A way of programming using mnemonics
+
+**Mnemonics** Short codes that are used as instructions when programming
+
+### Immediate and direct addressing
+
+**Immediate addressing** When the operand is the data to be used
+
+**Direct addressing** When the operand is the memory address or register number to load information from
+
+### Types of opcodes
+
+**Data transfer operations** Operations within an instruction set that move data around between the registers and memory
+
+**Arithmetic operations** Operations within an instruction set that perform basic maths
+
+**Shift instructions** Operations within an instruction set that move bits within a register
+
+**Logical operations** Operations within an instruction set that move the bits around within the operand
+
+**Branch operations** Operations within an instruction set that allow you to move from one part of the program to the other
+
+
+
 ## External hardware devices
 
+### Digital camera
+
+**Digital camera** A device for creating images of photographs, which can be printed or transferred onto a computer tobe manipulated and stored
+
+- When a photograph is taken the shutter opens and lets light in through the lens
+- The light is focused onto a sensor, which is usually either a charge coupled device or a complementary metal oxide semiconductor
+- The sensors are made up of millions of transistors, each of which stores the data for one or more pixels
+- As the light hits the sensor it is converted into electrons and the amount of charge is recorded for each pixel
+- With light, all colours can be created from red, green, and blue. Therefore the camera will either have three different sensors, or use three different filters
+- The data are typically stored on removable storage devices, usually referred to as flash memory
+- Data are usually stored in compressed files
+- RAW files can also be generated, which are uncompressed and therefore contain all of the data from the original photograph
+- This digital data can no be decoded and manipulated using specialised software
+
+**RGB filter** red, gree, and blue filters that light passes through in order to create all other colours
+
+**Compression** The process of reducing the size of a file
+
+**Resolution** The number of pixels used to create an image
+
+### Barcode reader
+
+**Barcode reader** A device that uses lasers or LEDS to read the black and white lines of a barcode
+
+- A light, usually an LED or laser is passed over an image
+- Some form of light sensor is used to measure the intensity of light being reflected. This is converted into a current effectively generating a waveform. this could be achieved using a photodiode or a CCD sensor in the same way as the digital camera
+- White areas reflect most light and black areas least
+- The waveform is analogue and therefore needs to be converted into digital form using an analogue to digital converter
+- The signal is decoded into a form that can then be interpreted by software
+
+There are many different types of barcode. 
+The most common is the uinveral product code which uses a series of black and white lines of four different widths that are encoded to represent the values 1 to 4. The numbers are below for a manual override and include a check digit.
+
+Barcodes are used primarily for inputting product details at the point of sale.
+
+More recently, the same technology has been applied to codes that are made up of blocks of black and white symbols rather than lines. One example is a QR code which can be used to encode a wider range of information than a barcode.
+
+### Radio frequency identification
+
+**Radio frequency identification** A microscopic device that stores data and transmits it using radio waves. Usually used in tags to track items
+
+- The tag, which can be microscopically small, contains a chipe, which contains the data about the item and a modem to modulate and demodulate the radio signals
+- The tag also contains an antennae to send and receive signals
+- Tags can be either active, which means that they have their ownpower source, or passive, which means that they will pick up electromagnetic power when they are in range of an RFID reader
+- Signals and therefore data can be transmitted in both directions using radio frequencies. This may be over a short or long distance depending on what the tags are being used for and how they are powered. The typical range of RFID tags is between 1 and 100 metres
+- Tags may be used to simpy track the physical location of the tagged item or the item may transmit data back
+
+Example use cases
+- Tracking individuals, particularly vulnerable adults
+- Use in electronic passports
+- In credit and debit cards to make contactless payments
+- In transport and distribution to track shipments and deliveries
+- On high value items, such as artwork in museums or equipment in hospitals
+
+### Laser printer
+
+**Laser printer** A device that uses lasers and toner to create mono and colour prints
+
+- A rotating drum inside the printer is coated in a chemical which holds an electric charge
+- The laser beam is reflected onto the drum and where the light hits the drum is discharged, effectively creating an image on the drum
+- As the drum rotates it picks up toner on the charged parts of the drum
+- Paper is passed over the drum and by giving the paper the opposite charge, the toner is transferred to the paper
+- The paper is heat treated to fuse the toner onto the paper
+
+To achieve colour printing, four different coloured toners are used, and the process of transferring the toner to the drum is repeated for each colour. In some prineters, a transfer belt is used to hold the four-colour image and therefore transfer it just once from the belt to the paper. 
+When printing, four colours are needed: cyan, magenta, yellow, and black.
+
+### Magnetic hard disk
+
+**Hard disk** A secondary storage device made up of metallic disks that stores data magnetically
+
+Hard disks spin at speeds between 3600 and 15000 rpm as a series of heads read from and write to the disks. The heads to not actually touch the disks but float slightly above it by virtue of the speed at which the disk spins.
+
+The surface of the disk is organised into concentric tracks and each track is split into sectors each of which can be individually addressed by the operating system. Because the head assembly can read any one of several disks, a cylinder reference is also used to identify which of the disks in the stack is being addressed.
+
+Each sector has the same capacity and a large file will be stored over a number of sectors. The operating system groups sectors together into clusters to make storage easier to manage.
+
+### Optical disk
+
+Optical disk is a generic term for all variations of CD, DVD, and Blu-Ray that use laser technology to read and write data. 
+An optical disk is made up of one single spiral track that starts in the middle and works its way to the edge of the CD. The laser will read the data that are contained within this track by reading the pits and lands in combination with a sensor that measures how much light is reflected.
+
+For read-only optical disks, when data is written it is encoded as a series of pits or lands within the track. A protective layer is then put over the surface to prevent any corruption of the data.
+
+For writeable optical disks, rather than using pits and lands, the disk is coated with a translucent photosensitive dye. When writing to the disk, the laser will alter the state of a dye spot that is coated onto the surface making it opaque.
+A write laser alters the density of the dye, and a read laster interprets the different densities to create binary patterns.
+
+### Solid state disk
+
+High speed access to memory is achieved using memory cards made up of semiconductors.
+Solid state drives use NAND memory and data is organised into blocks in a similar way to a traditional hard disk, with a controller managing the blocks of data.
+
+**Controller**  A device which manages access to and organises data into blocks
+
+**Block** The concept of storing data in set groups of bits and bytes of a fixed length
+
+**Floating gate transistor** A non-volatile transistor that stores data without a power source
+
+A gloating gate transistor is able to trap and store charge. 
+It contains two gates, a floating gate and a control gate.
+A thin layer of oxide is placed between the two gates, effectively trapping the charge inside the floating gate even when the power is turned off.
+
+| | Hard disk | Solid state | Optical disk | Blu-Ray (OD) |
+| --- | --- | --- | --- | --- |
+| Typical capacity | High (1 TB) | Medium (500 GB) | Low (0.9-1.7 GB) | Low (25-50 GB) |
+| Relative cost | Medium | High | Low | Low |
+| Power consumption | High | Low | High | High |
+| Speed of access | Medium | High | Low | Low |
+| Latency | High | Low | Very high | High |
+| Fragmentation | | None | | |
+| Reliability | Good | Very good | Fair | Fair |
+| Physical size | Large | Small | Small | Small |
+
+
 # Moral, ethical, legal, and cultural issues
+
+**Ethical issues** Factors that define the set of moral values by which society functions
+
+## Use and misuse of data
+
+
 
 # Communication and networking
 
