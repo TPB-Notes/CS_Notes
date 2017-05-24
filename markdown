@@ -18,7 +18,7 @@
 
 **Record** A single line of a text file
 
-**Subroutine|Procedure|Subprogram|Routine** A name block of code designed to carry out a specific task
+**Subroutine/Procedure/Subprogram/Routine** A name block of code designed to carry out a specific task
 
 **Function** A subroutine that returns a value
 
@@ -1664,17 +1664,521 @@ A thin layer of oxide is placed between the two gates, effectively trapping the 
 
 ## Use and misuse of data
 
+Most organisations collect data on an ongoing basis and much of these data are personal.
+this presents a number of issues:
+
+- Personal privacy: A lot of data are stored online as a matter of routine and as individuals we may not have explicitly consented to them being collected and used
+- Data security: Much of the data are stored online or on networks connected to the Internet. How can we be sure they are safe from unauthorised users?
+- Misuse of data: Data collected for one purpose are used for a different purpose. In many cases data are sold on to other organisations.
+- 'Big Brother': Many people have concerns that personal data are being used by government to monitor individuals and that this is a breach of our basic human rights
+- Online profile: Every time you do anything online, such as using social media, that data may stay online for years and contribute to what people know about you
+- Profiling: Large organisations often accumulate data in order to build up a profile of individuals. this could have a negative impact on an individual
+
+### Banking- the benefits of technology
+
+Around 30 years ago, if you wanted to carry out any banking transaction you had to do it in the limited time that a bank was open. the invention of cash machines in the 1980s was a revolution that allowed customers constant access to their money. the invention of online banking in the 1990s meant that almost all transactions could be done at any time, including paying bills, setting up direct debits, and moving money from one account to another.
+
+### Banking- The threat of technology
+
+According to some sources there are as many as 250,000 phishing attacks per year.
+Some customers have lost hundreds of thousand of pounds in individual attacks that use sophisticated software to emulate online banking websites.
+
+### Other moral and social issues
+
+**Unauthorised access** Where computer systems or data are used by people who are not the intended users
+
+- Unauthorised use of software: Some people believe that software is too expensive and that software companies are exploitative. Therefore, downloading or copying software is morally defendable
+- Inappropriate behaviour: There is evidence that people's behaviour changes when they are online. In the worst cases this can lead to online abuse which may spread into the real world
+- Inappropriate content: There are large volumes of content on the Internet which many people consider to be inapprorpriate. This content may not be illegal, but there is conecrn about what effect it has on society
+- Freedom of speech: Some people believe that they should be able to say whatever they want, even if that offends other people. the Internet gives almost everyone the ability to do that. It therefore raises the issue of whether there should be some code that all internet users should adhere to when expressing their views
+- Unemployment: A broader social issue relates to the impact that new technology has on people's working lives. Many businesses such as retail and banking no longer need to emply as many people in their stores and branches. On the other hand, they may create more jobs in IT for employees working in their online businesses
+- Access to the internet: It is difficult to know how many people have access to the Internet. Are those who do not have access disadvantaged?
+
+**Moral issues** Factors that define how an individual acts and behaves
+
+**Code of conduct** A voluntary set of rules that defines the way in which individuals and organisations will behave
+
+The British Computer Society has produced a code of conduct and a code of ethics that guide individuals and organisations on the use of computer systems. 
+
+The main principles are that members should:
+- Always operate in the public interest
+- Have a duty to the organisation that they work for, or the college that they attend
+- Have a duty to the profession
+- Maintain professional competence and integrity
+
+## Legal issues
+
+**Legal issues** Factors that have been made into laws by the government
+
+Legislators who enforce these laws have two main issues:
+- Geographical limitations: Most UK laws only apply in the UK. With the global nature of the Internet it can be difficult to prove where a particular offence took place. Also, if the perpetrator breaks a UK law but they are based in another country, it can be difficult to prosecute them
+- Constant change: most acts are introduced in response to current events. As technology develops so rapidly, laws often become out of date quite quickly
+
+### Data Protection Act
+
+The Data Protection Act was introduced in 1984. it has since been updated to reflect the enormous changes in the use of information.
+It places controls on organisations and individuals that store personal data electronically.
+
+The definition of personal data is any data on an individual where the person (known as the data subject) is alive and can be individually identified.
+
+The Act states that any person or organisation storing personal data must register with the Information Commissioner, an independent organisation set up by the government to oversee Data Protection and Freedom of Information.
+
+the Information Commissioner's mission is:
+
+"We shall develop respect for the private lives of individuals and encourage the openness and accountability of public authorities.
+- by promoting good information handling practice and enforcing data protection and freedom of information legislation; and
+- by seeking to influence national and international thinking on privacy and information access issues."
+
+There are eight main principles behind the data Protection Act. Anyone processing data must comply with these eight enforcable principles of good practice.
+
+Data must be:
+- Fairly and lawfully processed
+- Processed for limited purposes
+- Adequate, relevant, and not excessive
+- Accurate
+- Not kept longer than necessary
+- Processed in accordance with the data subject's rights
+- Secure
+- Not transferred to countries without adequate data protection
+
+Another feature of the Act is that data subjects have the right to know what data are stored about them by any particular individual or organization.
+These are known as subject access rights. If this information is incorrect then the data subject has the right to have it corrected. The organisation must be given notice and may charge a small fee to the data subject.
+
+### Freedom of information act
+
+The Freedom of Information Act extends the subject access rights of the Data Protection Act and gives general rights to access of information held by public authorities such as hospitals, doctors, dentists, the police, schools and colleges. Both Acts are overseen by the Information Commisioner.
+
+The Act gives individuals access to both personal and non-personal data held by public authorities. the idea behind the Act was to provide more openness between the public and government agencies. Therefore, the agencies are obliged to give the public access to information and to respond to individual requests for information. Much of t
+
+### Computer Misuse Act
+
+**Data misuse** Using data for purposes other than for which it was collected
+
+The Computer Misuse Act contains three specific offences related to computer usage:
+- Unauthorised access to computer programs or data: This includes some forms of hacking including breaking through password protection and firewalls, decrypting files, or stealing another user's identity
+- Unauthorised access with further criminal intent: An extension of the first offence where there is a clear intention to carry out a further criminal act such as an act of fraud or a copyright breach
+- Unauthorised modification of computer material: This includes falsifying bank details or exam grades, spreading viruses designed to corrupt data and programs and interfering with system files
+
+The Act was introduced before the widespread use of the Internet, which has lead to some problems with enforcement.
+
+### Regulation of Investigatory Powers Act
+
+The RIP Act was introduced to clarify the powers that government agencies have when investigating crime or suspected crime. It is not specific to the world of computing but was introduced partly to take account of changes in communication technology and the widespread use of the Internet.
+
+There are five main parts to the Act.
+Part 1 relates to the interception of communications, including electronic data.
+Part 3 covers the investigation of electronic data protected by encryption.
+
+It gives law enforcement agencies the right to intercept communications where there is suspicion of criminal activity. They also have the right to decipher these data if they are encrypted even if this means that the user must tell the police how to decrypt the data.
+
+It also allows employers to monitor the computer activity of their employees during work time.
+
+### Copyright, Designs, and Patents Act
+
+This Act gives rights to the creators of certain kinds of material allowing them control over the way in which the material is used. The law covers the copying, adapting, and renting of materials.
+
+**Copyright** The legal ownership that applies to software, music, films, and other content
+
+Copyright applies to all works, regardless of the format. Consequently, work produced on the Internet is also covered by copyright. It is illegal to produce pirate copies of software or run more versions on a network than have been paid for.
+It is an offence to adapt existing versions of software without permission. It is also an offence to download music or films without the permission of the copyright holder.
+
+In computing, two techniques are used to protect copyright:
+- Digital Rights Management: This uses access control software to limit the way in which users can control, use, copy, print, or edit digital content that they have bought
+- Licensing: normally used for software, this provides users with a paper based or digital proof that they have purchased software legally and details what they are allowed to do with the software
+
+### Other relevant acts
+
+- The Official secrets Act prevents the disclosure of government data relating to national security
+- The Defamation Act prevents people from making untrue statements about other which will lead to their reputation being damaged
+- The Obscence Publications Act and the Protection of Children Act prevent people from disseminating pornograhic or violent images
+- the Health and Safety Regulations provides regulation on the correct use of screens and is a specific addition to the Health and Safety at Work Act
+- The Equality Act makes it illegal to discriminate against anyone on the grounds of sex, sexual orientation, ethnicity, religion, disability, or age
+
+## Cultural issues
+
+**Cultural issues** Factors that have an impact on the ways in which we function as a society
+
+There are elements of computer use that have a cultural impact in that they can change our attitudes, beliefs, and actions:
+- Over use of data: There are fears that we are becoming completely dependent on data. Many decisions about the way in which the country is run are based on data analysis
+- Invasive technologies: A lot of data are collected without our consent, such as satellite images
+- Over reliance on computers: What happens when computer systems fail?
+- Over reliance on technology companies: Two thirds of all Internet searches are done through Google. Wikipedia often appears on the front page of search results. This gives these two organisations a great influence over the information we access
+- 'Big Brother' culture: With the increasing use of CCTV, the desire for national identity cards, and the monitoring of emails and mobile phone calls, some people believe that we are heading towards a society where everything is watched
+- Globalisation: As we become more connected to other cultures, we are more likely to be influenced by them
+
 
 
 # Communication and networking
 
 ## Communication
 
+**Serial transmission** Data is transmitted one bit at a time down a single wire
+
+**Parallel transmission** Data is transmitted several bits at a time using multiple wires
+
+**Bandwidth** A measure of the capacity of the channel down which the data is being sent
+
+**Bit rate** The rate at which data is actually being transmitted
+
+**Baud rate** One baud represents one electronic state change per second. An electronic state change could encode multiple bits
+
+**Latency** The time delay that ocfurs when transmitting data between devices
+
+### Synchronous and asynchronous data transmission
+
+In synchronous transmission, the two devices will synchronise their transmission signals. The computer sending the data will control the transmission rate to be in time with the device or computer receiving the signal. If two devices are not synchronised then data could be lost during transmission.
+
+Once the devices are synchronised, data can be sent without any need for further information.
+
+Asynchronous  transmission does not require the permanent synchronisation of the sender's and receiver's system clocks. Instead, it synchronises only for the duration of the transmission by sending additional bits of information called start and stop bits.
+
+**Asynchronous data transmission** Data is transmitted between two devices that do not share a common clock signal
+
+**Start bit** A bit used to indicate the start of a unit of data in asynchronous data transmission
+
+**Stop bit** A bit used to indicate the end of a unit of data in asynchronous data transmission
+
+**Parity bit** A method of checking binary codes by counting the number of 0s and 1s in the code
+
+- The start bit causes the receiver to synchronise its clock to the same rate as the sender
+- Both devices have already agreed on how many bits of data will follow, whether parity is used, and how many stop bits there will be
+- The stop bit(s) indicate that the data has arrived so the processor on the receiver's device can now handle those bits. The stop bit also also allows the receiver to identify when the next start bit arrives
+- If there is more data then another start bit will be sent and the cycle will continue
+- The sender's device sends data as soon as it is available rather than waiting for the clock pulse or a synchronisation signal from the receiver
+
+**Synchronous data transmission** Data is transmitted where the pulse of the clock of the sending and receiving devices are in time with each other
+
+### Protocols
+
+**Protocols** Sets of rules
+
+**TCP/IP** A set of protocols for all TCP/IP transmissions
+
+**HTTP** The protocol to define the identification, request, and transfer of multimedia content over the internet
+
+**FTP** The protocol for handling file uploads and downloads
+
+TCP/IP:
+
+The Transmission Control Protocol/Internet Protocol is actually two protocols that are usually referred to as one and relate to the set of rules that govern the transmission of data around the Internet. Data sent around the Internet are split into packets. TCP/IP handles the routing and re-assembly of these data packets.
+
+HTTP:
+The Hypertext Transfer Protocol is the set of rules governing the exchange of the different types of file that make up displayable web pages.
+
+FTP:
+The File Transfer Protocol is similar to HTTP in that it provides the rules for the transfer of files on the Internet. FTP is commonly used when downloading files or uploading web pages to a server.
+
+
+
 ## Networks
+
+**Network** Devices that are connected together to share data and resources
+
+**Network adapter/Network Interface Card** A card that enables devices to connect to a network
+
+**Network topology** The conceptual layout of a network
+
+**Local Area Network** A network over a small geographical distance, usually a single site and organisation
+
+**Wide Area Network** A network spread over a large geographical distance
+
+Modern routers are actually a number of devices merged together into a single device:
+- Receives every packet of data being transmitted, reads the header and forwards it to its destination
+- Acts as a firewall, preventing certain packets from being forwarded
+- Acts as an switch, creating a connection between two devices on a network
+- Provides a wireless access point transmitting a WIFI signal
+- Acts as a modem to convert digital signals to analogue so that they can be transmitted down standard telephone cables
+
+### Star topology
+
+**Star topology** A way of connecting devices to a network where each device has a dedicated cable to a central computer or switch
+
+Software may be stored centrally on the server and can be installed, upgraded, and maintained via the server. The server will also contain an operating system that controls the users' access to the system and also includes various administration functions such as managing the print queue.
+
+| Advantages | Disadvantages |
+| --- | --- |
+| Fast connection speed as each client has a cable | Expensive to set up due to cabling |
+| Will not slow down when many users are online | If the cable fails, the client may not be able to receive data |
+| Fault finding is simpler as individual faults are easier to trace | Difficult to install as multiple cables are needed, especially across multiple buildings |
+| Relatively secure as each connection is unique | The server can get congested as all communications must pass through it |
+| New clients can be added without affecting the other clients | |
+| If one cable or client fails, then only that client is affected | |
+
+### Bus topology
+
+**Bus topology** A network layout that uses one main data cable as a backbone to transmit data
+
+| Advantages | Disadvantages |
+| --- | --- |
+| Only one main cable required | Less secure as data are transmitted down one cable |
+| Easier to install than a star | Transmission times get slower when more users are on the network |
+| Easy to add new clients | One cable affects all users |
+| | Less reliable and more difficult to find faults |
+
+**Physical topology** The way in which devices in a network are physically connected
+
+**Logical topology** The conceptual way in data is transmitted around a network
+
+### Client-server networks
+
+In the star and bus topologies, the diagram shows a main server. Although the clients have local resources in terms of processing power, and storage capacity, they are controlled by the server. This emans that when new software is installed, it can be installed on the server and distributed.
+
+The client may request
+- Access to a printer
+- Providing a secure Internet connection
+- Access to email
+- Access to applications
+- Access to files
+
+This is the most common way of constructing a LAN with a large number of uses.
+
+**Client-server** A network methodology where one computer has the main processing power and storage and the other coputers act as client requesting services from the server
+
+### Peer to peer networks
+
+**Peer-to-peer** A network methodology where all devices in a network share resources between them rather than having a server
+
+This is more common among smaller networks or for certain applications such as file-sharing. Peer-to-peer networks can be created without the need for a special network operating system.
+
+### Wireless networks
+
+**Wireless Wide Area Network** A WAN that does not use cables, but sends data using radio waves
+
+**Media Access Control Adress** A unique code that identifies a particular device on a network
+
+**WiFi** A standard method for connecting devices wirelessly to a network and to the Internet
+
+**Wireless Local Area Network** A LAN that does not use cables, but connects using radio waves
+
+All devices on a network have a MAC address. This is encoded into the network interface card and is in the format of six groups of two hex digits.
+The first half of the MAC address is the manufacturer code and the second half is the unique device code allocated by that manufacturer.
+
+Different communication devices are needed to create a wireless network, depending on the geographical coverage.
+
+### Protocols
+
+There are a set of standards and protocols for wireless communications and WiFi to ensure that all devices are able to connect with each other and transmit and receive data. A protocol called Carrier Sense Multiple Access with Collision Avoidance (CSMA/CA) was developed to enable the various devices to transmit at high speeds without interfering with each other.
+
+When data are sent around the networks, they are sent in frames with all the frames being re-assembled at the receiving end. Any device on the network may attempt to send frames. These frames can be picked up by any nodes or devices within range.
+Before each frame is sent, the devices use the CMSA/CA protocol to see whether the transmission medium is idle or whether another device is using it. If the transmission media is idle, the data are sent.
+Otherwise, each device will wait a random amount of time before trying again.
+
+On receipt of the data, an acknoledgement is sent back to the sending device to confirm that the data have been received and not corrupted. If this is not received, again it will wait a random amount of time before resending.
+
+An optional extension to the protocol is a system called Request to Send/Clear to Send (RTS/CTS), which works between the nodes on a network. The RTS sends a message to the receiving node or access point and if a CTS message is received, it knows that the node is idle and that the data frame can be sent.
+
+**Request to Send/Clear to Send** A protocol to ensure data does not collide when being transmitted on wireless networks
+
+**Service Set Identiffier (SSID)** A locally unique 32-character code that identifies a device on a wireless network
+
+As alll of the data are being sent through radio waves rather than cables, each device needs a way of ensuring that it is connecting to the correct network. The standard method of doing this is to use the SSID in the header of each packet of data being sent.
+
+Each code is locally unique to the particular WLAN that is being used, and therefore acts as an identifier allowing that frame of data to be transmitted.
+The network interface card must also be programmed with the same ID so that the device can connect to the WLAN in the first place.
+
+### Network security
+
+Wireless technology can be less secure than a wired system. This is because the signals are asier to intercept.
+There are a number of steps that can be taken to increase the level of security on a wireless network:
+- Change the SSID from the default value and hide it from transmission
+- Ensure that all devices are WiFi Protected Access compliant
+- Use strong encryption
+- Create a white list of MAC addresses that are known to be trustworthy
+
+**WiFi Protected Access** A protocol for encrypting data and ensuring security on Wifi Networks
 
 ## The Internet
 
+**Internet** A global network of networks
+
+### Uniform resource locator
+
+A URL is the full address used to find files on the Internet.
+
+The contentds of the file that a URL locates will vary depending on the Internet protocol being used. When HTTP is used, it finds an index.html file.
+
+**Uniform resource locator** A method for identifying the location of resources on the Internet
+
+The address is made of several parts:
+- The protocol being used
+- The domain name
+- The filename to locate the specific file needed
+
+#### Domain name
+
+**Domain name** The recognisable name of a domain on the Internet
+
+The domain name identifies organisations or groups on the Internet.
+- co indicates a company
+- com indicates a commercial organisation
+- gov indicates a government
+- ac indicates an academic institution
+- sch indicates a school
+- org indicats a non commercial organisation
+- net indicates a company providing Internet services
+- A two letter country code such as "uk" indicates the country
+
+#### IP Address
+
+**Internet Protocol (IP) address** A unique number that identifies devices on a network
+
+Every domain name is mapped to a number. A domain name server is used to translate the domain name to an IP address.
+
+**Domain name server (DNS)** A server that contains domain names and associated IP addresses
+
+Some IP addresses are classed as private or non-routable addresses. Typically these are the IP addresses used by devices on a private network.
+The IP address is needed in order to route data around the network, however it does not need to be made public as that device is not diretly connected to the Internet. It is hidden behind a router or firewall. Non-routable addresses only have to be unique within the LAN and therefore do not need to be alloacted on a global basis.
+
+When connection to the Internet is required, the device will be connected to a router or proxy server in order to connect. In this case the IP address of that router or server needs to be a public or routable address in which case it becomes a unique address that is registered under the domain name system.
+
+### Ports
+
+**Port** Used to identify a particular process or application on a network
+
+**POP3** A protocol for receiving emails
+
+The port is a 16 bit number attached to the IP address. By addressing that port, a process or application will be accessed on the client.
+
+When a client sends a request to the server using a well-knon port, the server needs to respond back to a client port and not the well known port on the client side. Therefore a source port must be sent as part of the client request.
+
+**Secure shell (SSH) protocol** A protocol for remote access to computers
+
+### Network Address Translation
+
+The system that is used to match private IP addresses to public ones is called Network Address Translation.
+This has two main advantages:
+- A unique IP address is not needed for every device on a network, only on the router or server that is physicallly connected. This means that only the public address needs to be registered with the DNS system
+- There is an increased level of security as the private IP address is not being broadcast over the Internet, making that device more secure from unauthorised access
+
+**Domain name server (DNS) system** A system of connected domain name servers that provides the IP addresses of every website on the internet
+
+The router will track connections and maintain a list of mappings between private IP addresses and port numbers and the corresponding public address. It does this by adding entries to a translation table which act as a look-up between the internal IP address and the external IP address.
+
+The following is a common way that NAT can work when a workstation on the internal network wants to load data from a server on the Internet:
+- The workstation on the internal network sends a packet to the server on the Internet to request some data, including its own internal IP address and port number in the packet so that the server knows where to return the data to
+- The router replaces the internal IP address and port number in the packet with its external IP address and a port number that it generates. This port number will be unique to this communication, within a certain time frame
+- The router stores the mapping information from the internal IP address and port number to external port number in the translation table
+- Data sent back from the server will be received by the router which will look up the port number in the translation table to identify which machine on the intrnal network sent the request to the server
+- The router's IP address in the packet will be replaced with the originating workstation's IP address and port number, as read from the translation table
+- The reply packet can then be sent on to the originating workstation
+- Where the translation table does not contain a match to a port number in a packet received from a computer on the Internet, the packet is dropped because it is not a packet sent in response to a request from within the network and may be a security issue
+- The internal IP address and port are never made public on the external network
+
+### Port Forwarding
+
+Port forwarding is commonly used when a server inside a private network, with a non-routable IP address, is to be used to provide services to clients on the Internet. As the server has non-routable IP address, it cannot be accessed directly from the Internet.
+Therefore, the client on the Internet must use the public IP address of the router that connects the private network with the server on it to initiate a connection. This router can be programmed so that request sent to a particular port number are forwarded to a device with a specific IP address within the network.
+
+**Port forwarding** A method of routing data through additional ports
+
+### Sockets
+
+A network socket is an endpoint of a communication flow across a computer network. Sockets are created in software not hardware. A TCP/IP socket is made up from the combination of an IP address and port number.
+
+**Socket** An endpoint of a communication flow across a computer network
+
+Sockets can be created at any time to enable a network connection to be established to or from a computer.
+For example Client A is being used on a LAN with a local IP adress 192.168.233.100 and wishes to request a web page from server B which has IP address 192.168.233.2. As a web page is being requested, port 80 on the server will be used so Client A will send its request to 192.168.233.2:80.
+
+In the request, Client A will include its own IP address and port number that has been temporarily generated for this communication. The client will listen on this port number for a reply.
+The transport layer of the TCP/IP stack uses the port number to direct packets to the correct application
+
+### Subnet masking
+
+IP addresses are split into a network identifier and a host identifier.
+The network may be a local network, or it could be a remote network and the device could be a computer or printer etc.
+
+**Subnet masking** A method of dividing a network into multiple smaller networks
+
+Addresses are split up this way to make networks easier to manager and to make the routing of data more efficient.
+
+When a computer on a network sends data to another computer, it needs to identify whether it is on the same subnet as the other computer. If it is, it can send data to it directly. If it is not, it will send data to the relevant router or gateway, which will in turn send the data on to the correct subnet and computer.
+
+**Gateway** A node on a network that acts as a connection point to another network with different protocols
+
+A gateway may be used to connect two different company networks together.
+
+The gateway carries out all of the protocol conversion required to enable the two networks to work together.
+
+To identify whether the destination computer is on the same subnet, the sending computer needs to look at the network portion of the destination IP address to see if it is the same as its own.
+
+To do this a subnet mask is used, which uses the bitwise logical AND to eliminate the irrelevant bits.
+
+```
+01111000.10110000.10000110.00100000 Full IP of sending computer
+11111111.11111111.11111111.00000000 AND Subnet mask
+01110000.10110000.10000110.00000000 Network ID of sending computer
+
+01111000.10110000.10000110.01001011 Full IP address of destination
+11111111.11111111.11111111.00000000 AND Subnet mask
+01110000.10110000.10000110.00000000 = Network ID of destination computer
+```
+
+As the sending computer and destination computer have the same network ID, the data can be sent directly. Otherwise the data would be sent to a router that would forward the transmission to the subnet that the destination computer is on.
+
+### IPV4 and IPV6
+
+The original 32 bit code is not enough to provide a sufficient number of permutations for the number of devices present on the Internet. Consequently, IPV6 was created, which uses 128 bits represented as eight groups of four hex numbers.
+
+### Dynamic Host Configuration Protocol
+
+IP addresses are defined as either static or dynamic. Static IP addresses are ones that are assigned and then never change. Dynamic IP addresses are allocated every time a device connects to a network.
+
+**Dynamic Host Configuration Protocol (DCHP)** A set of rules for allocating locally unique IP addresses to devices as they connect to a network
+
+A dedicated DHCP server is used on the network and handles the requests by managing the pool of available IP addresses, usually within a defined range of numbers depending on how the network is physically configured.
+
+### Domain name server
+
+Once allocated, the domain names of websites are mapped to unique IP addresses and this information is stored in databases on large servers.
+
+There are hundreds of DNSs in use around the world, all of which are connected to each other. 
+
+#### Internet registries
+
+The organisation that oversees the allocation of domain names and IP addresses is called ICANN, the Internet Corporation for Assigned Names and Numbers.
+They have a department called the Internet Assigned Numbers Authority (IANA) who manage five further organisations called Regional Internet Registries. Each of these has a defined region of the world and therefore a defined set of IP addresses that they are responsible for allocating.
+
+**Internet registries** Organisations who allocate and administer domain names and IP addresses
+
+**Regional Internet Registries** Organisations that allocate and administer domain names and IP addresses in different parts of the world
+
+### Routing and gateways
+
+Any transmission will be routed through a number of nodes before a connection is established between the sender and the reveiver. The router is used to send the data to the appropriate node on the network. It knows where to send it as each piece of data is sent as a packet, and it will read the header information in each packet of data being sent.
+
+**Packet** A block of data being transmitted
+
+Data packets are often transmitted between networks as well as around them. Sometimes the networks will be dissimilar in that they use different protocols. A gateway must be used to convert between the two protocols.
+
+Routing finds the optimum route between the sender and the receiver, which may be made up of many nodes. At each stage of the routing process, the data packets are sent to the next router in the path, often with reference to a routing table. The routing table stores information on the possible routes that each data packet may take between nodes on its path from sender to receiver.
+
+**Routing** The process of directing packets of data between networks
+
+### Packet switching
+
+One of the methods used to send data across networks is called packet switching. Data sent over the Internet is broken down into smaller chunks called packets. Each packet will also contain additional information including a packet sequence number, a source and destination address, and a checksum
+
+### Packet switching
+
+One of the methods used to send data across networks is called packet switching. Data sent over the Internet is broken down into smaller chunks called packets. Each packet will also contain additional information including a packet sequence number, a source and destination address, and a checksum. Packets of data are normally made up of a header, body, and footer.
+
+**Packet switching** A method for transmitting packetes of data via the quickest route on a network
+
+| Part | Contents |
+| --- | --- |
+| Header | MAC address of sender and receiver<br>The sender and receiver IP address<br>Protocol in use<br>Packet number or sequence number
+| Body | The actual data |
+| Footer | A checksum |
+
+The checksum is used to identify any errors. It could be generated by adding the values in the packet.
+
+Each packet can take a different route to its destination as it can be reassembled at the other end regardless of the sequence in which the packets are receieved. The packets are routed via the least congested and therefore quickest route. Data are transferred quicker using this method and are more secure as the packets take different routes.
+
+
+
 ## Internet security
+
 
 ## Transmission Control Protocol and Internet Protocol
 
@@ -1684,7 +2188,7 @@ A thin layer of oxide is placed between the two gates, effectively trapping the 
 
 **Relational database** A method of creating a database using tables of related data, with relationships between the tables
 
-**Table** A method for implementing an entity and attributes as a group of related data
+**Table** A method for implementing an entity and attributes as a group of related data 
 
 ## Entities
 
