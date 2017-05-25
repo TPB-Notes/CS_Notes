@@ -1960,7 +1960,7 @@ Different communication devices are needed to create a wireless network, dependi
 There are a set of standards and protocols for wireless communications and WiFi to ensure that all devices are able to connect with each other and transmit and receive data. A protocol called Carrier Sense Multiple Access with Collision Avoidance (CSMA/CA) was developed to enable the various devices to transmit at high speeds without interfering with each other.
 
 When data are sent around the networks, they are sent in frames with all the frames being re-assembled at the receiving end. Any device on the network may attempt to send frames. These frames can be picked up by any nodes or devices within range.
-Before each frame is sent, the devices use the CMSA/CA protocol to see whether the transmission medium is idle or whether another device is using it. If the transmission media is idle, the data are sent.
+Before each frame is sent, the devices use the CSMA/CA protocol to see whether the transmission medium is idle or whether another device is using it. If the transmission media is idle, the data are sent.
 Otherwise, each device will wait a random amount of time before trying again.
 
 On receipt of the data, an acknoledgement is sent back to the sending device to confirm that the data have been received and not corrupted. If this is not received, again it will wait a random amount of time before resending.
@@ -2180,9 +2180,299 @@ Each packet can take a different route to its destination as it can be reassembl
 ## Internet security
 
 
+### Firewall
+
+**Firewall** Hardware or software for protecting against unauthorised access to a network
+
+An organisation that has a LAN will have a number of computers linked together, which will all have access to internal information.
+The LAn may also allow users to acces the Internet, and this is a vulnerability. 
+
+One method of creating a firewall is packet filtering. It uses two network interface cards, one for the LAN and one for the Internet. When data packets are received through the Internet NIC, they can be examined before being passed around internally via the LAN NIC. Firewall stoftware is used to examine the packets to ensure that they do not contain any unauthorised data. At a basic level, the header of each packet can be examined to check that it has come from a recognised source.
+
+**Packet filtering**  atechnique for examining the contents of packets on a network and rejecting them if they do not conform to certain rules
+
+ Firewall software may also facilitate logging of all data so that it can be traced.
+ This allows automatic warnings to be generated.
+ 
+ A more sophisticated firewall may examine the contents of each data packet.
+ This is called stateful inspection and also involves the firewall examining where each data packet has come from. It keeps track of all open communication channels and therefore knows the context of each packet it receieves.
+ 
+ **Stateful inspection** A technique for examining the contents of packets on a network and rejecting them if they do not form part of a recognised communication
+ 
+### Proxy server
+
+One security mesaure that can be used is a proxy server. By routing through a proxy server, there is no direct connection between the computer on the LAN and the Internet. Instead, all requests get passed through a proxy server and can be evaluated to ensrue that they cme from a legitimate source or to filter  users so that they only have access to specific websites.
+
+### Private/Public key encryption
+
+**Symmetric encryption** Where both the sender and receiver use the same key to encrypt and decrypt the data
+
+The problem with symmetric encryption is that the the receiver must know the key. This is an inherent weakness with this system as if the key is intercepted is would be possible work out what it is, therefore making all further communications vulnerable.
+
+**Asymmetric encryption** Where public and private key are used to encrypt and decrypt data
+
+**Private key** A code used to encrypt/decrypt data that is only known by one user but is mathematically linked to a corresponding public key
+
+**Public key** A code used to encrypt/decrypt data that can be made public and is linked to a corresponding private key
+
+Suppose there are two computers A and B:
+- A will have a private key known only to A
+- A will also have a public key, mathematically related to the private key. Anyone can access it
+- B will also have a private key and a related public key
+- For A to send a secure message to B, A will first encrypt the message using B's public key
+- As the private and public keys are related, the message can only be decrypted by B using B's private key
+- As no-one else knows B's private key, even if the message were intercepted, it could not be decrypted
+
+### Digital certificates and signatures
+
+**Digital certificate** A method of ensuring that an encrypted message is from a trusted source as they have a certificate from a Certification Authority
+
+**Certification Authority** A trusted organisation that provides digitaol certificates and signatures
+
+Digital certificates, sometimes referred to as Secure Socket Layer certificates, were introduced to encourage people to do business on the Inernet, as many consumers were concerned about fraud.
+
+Websites using digital certificates usually advertise the fact prominently on the site using the logo of the Certification Authority.
+
+A digital signature is another method of ensuring the authenticity of the sender. 
+
+**Digital signature** A method of ensuring that an encrypted message is from a trusted source, as they have a unique, encrypted signature verified by a Certification Authority.
+
+Suppose A wants to send b a message with a digital signature:
+- A hashes the message
+- The hash is encrypted with A's private key
+- The encrypted hash is appened to the message
+- The message is encrypted using B's public key
+- The encrypted message is sent to B
+- B decrypts the message with B's private key
+- B decrypts the hash with A's public key to get the original hash
+- The decrypted message is hashed again, reproducing the message digest
+- The message has not been tampered with if the decrypted message digest is the same as the reproduced digest
+
+### Trojan
+
+**Trojan** Malware that is hidden within another file on your computer
+
+the distingushing feature of a Trojan is that it is hidden away inside another file and that it is not always obvious that a computer is infected.
+
+The Trojan does not replicate itself in the same way as other malware, and can therefore remain undetected.
+
+The Flam malware, is being classed as a new generation of superbug that is part Torjan, part worm, and part virus. It is quite large at 20MB. Once it has installed itself it has the capability to monitor network traffic, access data and programs, take screenshots, record converstaions, and monitor keystrokes.
+
+### Viruses
+
+**Virus** A generic term for malware where the program attaches itself to another file in order to infect a computer
+
+The defining feature of a virus is that it replicates itself and can therefore cause extensive damage to  networks.
+
+### Worms
+
+**Worm** Malware or a type of virus that replicates itself and spreads around a computer system. It does not need to be attached to another file in order to infect a computer
+
+### Protecting against malware
+
+Users can attempt to protect their computers:
+- Use anti virus software and other anti malware software, and keep it up ot date
+- Keep the operating system up to date
+- Use a firewall
+- Do not open attachments or click on pop-ups
+- Operate a white list of trusted sites
+- Ensure sites use HTTPS, digital signatures, and certificates
+- Use paswords on programs and files
+- Encrypt data files
+
+Programmers can:
+- Select a programming language with built in security features
+- Use recognised encryption techniques for all data stored within the pgoram
+- Set administrative rights as part of the program and carefully control access and permission rights for different users
+- Don't load up lots of Internet services unless they are needed
+- Thoroughly test the code, specifically for known security issues
+- Keep code up to date
+- Never trust the user
+
+System administrators can:
+- Ensure that requests are coming from recognised sources
+- Use a network firewall and use the packet filtering and sateful inspection techniques
+- use encryption techniques and ensure digital certificates and signatures are used and are up to date
+- Keep anti-virus software up to date
+- Update the network operating system regularly
+
+
+
+
 ## Transmission Control Protocol and Internet Protocol
 
+TPC/IP is made up of four main layers
+
+| | 
+| --- | 
+| Application layer |
+| Transport layer |
+| Internet layer |
+| Link layer |
+
+- Layer 4- Application layer: The application layer ahndles the Domain Name System and a series of other protocols such as FTP, HTTP, HTTPS, POP£, ect. For example, incoming and outgoing data are converted from one format to another
+- Layer 3- transport layer: this contains most of the configuration and coordination associated with the transmission that ensures that all the packets have arrived and that there are no errors in the packets. it also handles the way in which connections are made to create a path for data to travel between nodes. The sender and receiver are identified and the communication is set up, coordinated and terminated. Network resources are identified to ensure that they are sufficient for the communication to take place
+- Layer 2- network or Internet layer: Defines the IP addresses of devices that send and receive data and handles the creation and routing of packets being sent and receieved
+- Layer 1- Link layer: Provides synchronisation of devices so that the receiving device can manage the flow of data being received. It identifies what network topoloy is being used and controls the physical signals that transmit the strings of bits around the network. it also controls physical characteristics such as data transmission rates and the physical connections in a nework. On wireless networks it handles the CSMA/CA protocol
+
+![Image](http://ebooks.dynamic-learning.co.uk/prod_content/extracted_books/9781471839559/OEBPS/images/348-2.jpg)
+
+The highest level is closer to the user in that the processes are usually handled using either the operating system or application software. The lower layers are handled using a combination of hardware and software including the physical or wireless connections between devices. It is referred to as a stack because of the way in which the request from the client passes down through the layers of the protocol and then back up through the layers of the server side. This means that the last action that takes place in the Link layer on the client computer becomes the first action in the Link layer on the server.
+
+### Hypertext Transfer Protocol (HTTP) and Secure HTTP (HTTPS)
+
+**HTTP** A protocol for transmitting and displaying web pages
+
+**Client-server model** A way of implementing a connection between computers where one computer makes use of resources of another computer
+
+**HTTPS** An encrypted HTTP protcol
+
+Hypertext refers to the fact that web pages will have hyperliks to other files.
+
+### File Transfer Protocol (FTP)
+
+**FTP** A protocol for handling file uploads and downloads
+
+File transfer can be anonymous or non-anonymous depending on whether you need to identify yourself before the download.
+
+### Secure Shell (SSH) Protocol
+
+**Secure Shell (SSH) Protocol** A protocol for remote access to computers
+
+SSH is used to improve the security  of remotely controlling a computer.
+It does this partially by creating a secure network of nodes through which the access is made available. Public key encryption is used and login details are normally required.
+
+### Simple Mail Transfer Protocol (SMTP) and Post Office Protocol (POP3)
+
+**SMTP** A protocol for sending emails
+
+**POP3** A protocol for receiving emails
+
+Where the data cannot be sent, SMTP uses a queuing system to hold the email and attempts to send it at a later time. After a set number of times, it will send a message back to the sender notifying them of the delivery failure.
+
+POP3 is used to check for incoming mail on port 110.
+
+### Email and web servers
+
+**Email server** A dedicated server for handling email
+
+**Web server** A dedicated server for handling web content
+
+- Email server: This machine typically has a large storage capacity for storing a database of all the network users and their email addresses. Specific software on the server is used to handle the storage and transmission of emails, allowing users to access their emails regardless of what other services are available
+- Web server: This server hosts a website and handles traffic from users to the site.  Data stored on a web server may be in various formats, including text, scripts, and multimedia content. Web servers will make use of various protocols to ensure that all of these data are correctly handled and formatted
+
+### Web browsers
+
+**Web browser** An application for viewing web pages
+
+When a web page is loaded, a request is made to the DNS, which translates the URL to an IP address. The IP address is then used to access the web page host. The host then serves the web page to the browser on the client. 
+When a web page is loaded, the browser may cache it allowing it to br reloaded without having to make repeated requests.
+
 ## The client-server model
+
+In a small network, there may be a single server where all of the programs and data are stored.
+It is more likely however, that there will be several servers on a network serving hundreds of clients.
+
+- File server: Contains any type of file, including programs
+- Web server: Used to serve web pages on an Intranet
+- Proxy server: Each client is provided with a gateway to the Internet through the server
+- Print server: All client print requests are sent to the same server where they are prioritised, buffered, and then printed
+- Database server: Used to store the contents of databases and access the data for individual clients
+- Application server: Used to execute all of the procedures need to run applications
+
+### Application Program Interface (API)
+
+**Application Program Interface (API)** A set of subroutines that enable one program to interface with another program
+
+An API defines the way in which programs can work together. 
+One of these is the websocket protocol, which creates a connection between the client and the server. The client first sends a handshaking request to the server. In response the server creates a full duplex connection on a single socket. This allows simultaneous exchange of data in both directions enabling the client and server to communicate on an ongoing basis without the need to constantly refresh.
+
+**Websocket protocol** A protocol that creates a persistent connection between two computers on a network to enable real-time collaboration
+
+**Message** The name given to a packet of data being transmitted using the websocket protocol
+
+### CRUD and REST
+
+The four main processes required with databases can be defined with the CRUD acronym:
+- C: Create
+- R: Retreive
+- U: Update
+- D: Delete
+
+It also refers to the way in which data is actually displayed and reported on via the user interface. All databases conform to the CRUD principle however they are designed.
+
+**REST (Representational State Transfer)** A methodology for implementing a networked database
+
+REST is a deisgn methodology for networked database applications. It uses the HTTP protocol to carry out each of the four CRUD operations.
+
+| CRUD | SQL | HTTP |
+| --- | --- | --- |
+| Create | INSERT | POST |
+| Retreive | SELECT | GET |
+| Update | UPDATE | PUT |
+| Delete | DELETE | DELETE |
+
+![REST](http://ebooks.dynamic-learning.co.uk/prod_content/extracted_books/9781471839559/OEBPS/images/356-3.jpg)
+
+
+The REST model
+- The client makes a request to the server
+- The service requested is the database identified by its URL, which uniquely identifies the resource on the server and contains the database query
+- The API is run from the serve and accessed by the browser to coordinate processes between client and server applications
+- HTML files are used to ensure data is displayed in the correct format on the client side
+- Requests and data are transferred using HTTP
+- JSON (JavaScript Online Notation) or XML (Extensible Markup Language) are used to return the results of the query
+
+### JSON and XML
+
+**JSON (JavaScript Online Notation)** A standard method for transmitting data
+
+**XML (Extensible Markup Language)** A method of defining data formats for data that will be transmitted around a network
+
+JSON is a data format originally created as part of JavaScript, but now available as a standalone format. It is defined as human-readable and is made up of an object and values.
+
+JSON is a compact code that is very easy to understand and implement. It is also easy for computers to parse as each object and value is clearly define and described on each line.
+
+XML is a markup language that defines how data is encoded. 
+
+#### JSON vs XML
+
+| | JSON | XML |
+| --- | --- | --- |
+| Readability | Very easy to read as it is defined as objects and values | More difficult to read as it contains tags |
+| Size | Less data used | Requires more code than JSON |
+| Parsing | Quicker than XML as data is clearly defined | Slower than JSON as data has to be extracted from tags
+| Creation | Easier to create as syntax is simpler | More knowledge required for creation |
+| Extendibility | Limited range of data types | Complete freedom over data types used |
+
+### Thin vs thick clients
+
+**Thin client** A network where one computer contains the majority of resources, processing power, and storage capacity
+
+**Thick client** A network where resources, processing power, and storage capacity are distributed between the server and clients
+
+**Terminal** A computer that has little or no processing power or storage capacity and is used as a client in a thin client network
+
+#### Thin client model
+
+| Advantages | Disadvantages |
+| --- | --- |
+| Easier and cheaper to set up new clients | Clients are dependent on the server |
+| The server can be configured to distribute all required resources | Can slow down with heavy use |
+| Changes need only be implemented in one place | May require greater bandwidth to cope with client requests |
+| Easier for network manager to control clients | Powerful servers are expensive (Initial cost) |
+| Greater security as clients have fewer rights | |
+
+#### Thick client model 
+
+| Advantages | Disadvantages |
+| --- | --- |
+| Reduced pressure on the server leading to greater uptime | Reduced security if clients can download software and access the Internet directly |
+| Clients can store programs and data locally, giving them more control | More difficult to manage and update as new hardware and software must be installed on each machine |
+| Fewer servers and lower bandwidth can be used | Data is more likely to be lost on the client side |
+| Suitable for tablets and movile phones that require more processing and storage to be done server side | Can be difficult to ensure data integrity when many clients are working with local data |
+
+
 
 # Databases 
 
