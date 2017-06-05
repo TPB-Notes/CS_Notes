@@ -36,6 +36,9 @@
 
 **Modular design** A method of system design that breaks a whole system down into smaller units, or modules
 
+**Class** A class defines methods and fields that capture the common characteristics of objects
+
+
 ## Encapsulation
 
 Encapsulation is the concept of keeping the data and code within the same object.
@@ -167,6 +170,8 @@ else:
 
 **Stack frame** A collection of data about a subroutine call
 
+The stack frame contains the parameters to the subroutine call, its local variables, and its return address.
+
 **Call stack** A type of stack used to store information about active subroutines and functions within a program
 
 **Interrupt** A signal sent by a device or program to the processor requesting its attention
@@ -219,6 +224,8 @@ A weighted graph may be stored in an adjacency list by writing each adjacency of
 
 **Tree** A data structure similar to a graph, containing no loops
 
+**Rooted tree** A tree in which one vertex has been designated as the root
+
 **Node** An object in a graph
 
 **Edge** A join of relationship between nodes
@@ -239,6 +246,14 @@ This implementation uses three arrays:
 - The first stores the data
 - The second stores the left pointers
 - The right stores the right pointers
+
+#### Tree traversal
+
+Pre-order for copying a tree
+
+In-order for a binary search tree or outputting the contents of a binary search tree in ascending order
+
+Post-order for Infix to RPN conversions, producing an infix expression from a tree, or emptying a tree
 
 ## Hash tables and dictionaries
 
@@ -491,6 +506,9 @@ Repeat the process, comparing the first element in each list and placing the low
 
 *a fact is "a thing that is known or proved to be true." so the definition above is crap*
 
+Automation requires putting models (abstractions of real world objects/phenomena) into action to solve problems:
+
+
 ### Abstraction
 
 The concept of abstraction is to reduce problems to their essential features.
@@ -591,6 +609,8 @@ Rather than defining each individual process within a single machine, the univer
 ## Regular and context free languages
 
 **Regular expression** Notation that contains a string of characters that can be matched to the contents of a set
+
+**Regular language** Any language that a finite state machine will accept
 
 | Regular expression | Meaning | Strings produced |
 | --- | --- | --- |
@@ -808,6 +828,7 @@ It considers the worst-case scenario.
 
 **Halting problem** An example of an unsolvable problem where it is impossible to write a program that can work out whether another problem will halt given a particular input
 
+The Halting problem demonstrates that there are some problems that cannot be solved by a computer
 
 # Data representation
 
@@ -972,7 +993,9 @@ Unicode is being constantly developed and updated to include more languages and 
 
 ### Error checking and correction
 
+
 **Parity bit** A method of checking binary coudes by counting the number of 0s or 1s in the code
+
 
 #### Even and odd parity
 
@@ -1035,6 +1058,13 @@ Vector graphics have numerous advantages
 - Two and three dimensional animations can be created using vector graphics
 - Less data is used for simple images
 
+The properties of each geometric object in the image are stored in a list.
+These attributes may include:
+- Dimensions
+- Colours 
+- Position
+- Line sizes
+- Text for text elements
 
 ### Analogue and digital signals
 
@@ -1307,6 +1337,40 @@ $\overline{A+B} = \overline{A}.\overline{B}$
 
 **Logic gate** An electronic component used to perform boolean operations
 
+### Half adder
+
+A half adder adds two single binary digits and accounts for carried values. 
+
+![](https://i.imgur.com/e5RiTKr.png)
+
+The output at S is the result of adding the two bits (1 if one of the two bits is 1, but not both), and the output at C is the carried bit if both input bits are 1.
+
+### Full adder
+
+A full adder adds two single binary digits while accounting for a value carried in from a previous addition.
+
+![](https://i.imgur.com/Yvk8w0z.png)
+
+The sum output is the XOR result of all three input bits.
+
+The carry output is true if any pair of input bits are true.
+
+### D type flip flop
+
+The D type flip flop captures a value.
+
+**Flip-flop** A memory unit that can store one bit
+
+**Edge-triggered D-type flip-flop** A memory unit that changes state with each pulse of the clock
+
+**Clock** A device that generates a signal used to synchronise the components of the computer
+
+In the case of an edge-triggered D-type flip-flop on each pulse of the clock, the flip-flop will change state. For each pulse, data coming from the input will be stored and continue to be output until the next trigger pulse is received.
+
+**Ability to construct flip flop not required**
+
+![](https://upload.wikimedia.org/wikipedia/commons/9/99/Edge_triggered_D_flip_flop.svg)
+
 # Computer organisation and architecture
 
 ## Internal hardware of a computer
@@ -1540,6 +1604,16 @@ When an interrupt occurs, the processor identifies what kind of interrupt it is,
 
 **Branch operations** Operations within an instruction set that allow you to move from one part of the program to the other
 
+
+## Processor performance
+
+Processor performance is effected by:
+- Multiple cores
+- Cache memory
+- Clock speed
+- Word length
+- Address bus width
+- Data bus width
 
 
 ## External hardware devices
@@ -2282,7 +2356,7 @@ Users can attempt to protect their computers:
 
 Programmers can:
 - Select a programming language with built in security features
-- Use recognised encryption techniques for all data stored within the pgoram
+- Use recognised encryption techniques for all data stored within the program
 - Set administrative rights as part of the program and carefully control access and permission rights for different users
 - Don't load up lots of Internet services unless they are needed
 - Thoroughly test the code, specifically for known security issues
@@ -2303,14 +2377,14 @@ System administrators can:
 
 TPC/IP is made up of four main layers
 
-| | 
-| --- | 
-| Application layer |
-| Transport layer |
-| Internet layer |
-| Link layer |
+| Layer | Description |
+| --- | --- | 
+| Application layer | Interface between applications and the network |
+| Transport layer |  Orders and assembles data packets for transmission across the network |
+| Network layer | Delivers packets. Determines the address of the destination computer and finds a route for the packets | 
+| Link layer | Aids in error-free transmision. Contains the error checking rules and attempts to correct any transmission errors, as well as determining the flow rate |
 
-- Layer 4- Application layer: The application layer ahndles the Domain Name System and a series of other protocols such as FTP, HTTP, HTTPS, POP£, ect. For example, incoming and outgoing data are converted from one format to another
+- Layer 4- Application layer: The application layer handles the Domain Name System and a series of other protocols such as FTP, HTTP, HTTPS, POP3, ect. For example, incoming and outgoing data are converted from one format to another
 - Layer 3- transport layer: this contains most of the configuration and coordination associated with the transmission that ensures that all the packets have arrived and that there are no errors in the packets. it also handles the way in which connections are made to create a path for data to travel between nodes. The sender and receiver are identified and the communication is set up, coordinated and terminated. Network resources are identified to ensure that they are sufficient for the communication to take place
 - Layer 2- network or Internet layer: Defines the IP addresses of devices that send and receive data and handles the creation and routing of packets being sent and receieved
 - Layer 1- Link layer: Provides synchronisation of devices so that the receiving device can manage the flow of data being received. It identifies what network topoloy is being used and controls the physical signals that transmit the strings of bits around the network. it also controls physical characteristics such as data transmission rates and the physical connections in a nework. On wireless networks it handles the CSMA/CA protocol
@@ -2630,7 +2704,7 @@ Both of these tables are now in third normal form.
 
 # Structured Query Language
 
-*SQL* A specialised language that is used for managing relational databases. Its functions allow users to define tables, insert, update, and delete data and to carry out queries on data to produce and output subsets of the main data. 
+**SQL** A specialised language that is used for managing relational databases. Its functions allow users to define tables, insert, update, and delete data and to carry out queries on data to produce and output subsets of the main data. 
 
 Data types:
 | Type | Explanation |
@@ -2643,6 +2717,22 @@ Data types:
 | Real | Any number to 7 decimal places |
 | Date | In the format day, month, year |
 | Time | In the format hour, minutes, seconds |
+
+
+### Creating a table
+
+```SQL
+CREATE TABLE table_name(
+   column1 datatype,
+   column2 datatype,
+   column3 datatype,
+   .....
+   columnN datatype,
+   PRIMARY KEY( one or more columns )
+)
+```
+
+
 
 ## Entering and updating data
 
