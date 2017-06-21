@@ -1,5 +1,7 @@
 # CS Notes
 
+# Beginning of Paper 1 content
+
 # Programming
 
 **Memory** The location where instructions and data are stored on the computer
@@ -830,6 +832,8 @@ It considers the worst-case scenario.
 
 The Halting problem demonstrates that there are some problems that cannot be solved by a computer
 
+# Beginning of Paper 2 content
+
 # Data representation
 
 ## Number systems
@@ -878,7 +882,7 @@ Add the columns starting from the right hand side, carrying 11 to the next colum
 
 To multiply in binary, you multiple the first number be each of the digits of the second number in turn, starting from the right hand side.
 This means that you are multiplying each each digit by 0 or 1. 
-You then do the same for the ntext digit, shifting your answers to the left as you would in decimal multiplication.
+You then do the same for the next digit, shifting your answers to the left as you would in decimal multiplication.
 
 You can then carry out a binary addition to find the final answer.
 
@@ -994,7 +998,7 @@ Unicode is being constantly developed and updated to include more languages and 
 ### Error checking and correction
 
 
-**Parity bit** A method of checking binary coudes by counting the number of 0s or 1s in the code
+**Parity bit** A method of checking binary codes by counting the number of 0s or 1s in the code
 
 
 #### Even and odd parity
@@ -1023,7 +1027,7 @@ Like a parity bit, a check digit is a value that is added to the end of a number
 
 The check digit is created by taking the digits that make up the number itself and using them in some way to create a single digit. The simplest, but most error prone is to add the digits of the number together and keep on adding the digits until you have only a single digit remaining.
 
-The problem with this system is that if two numbers are transposed, the check digits will be the same. In order to overcome this, each number in the pattern is given a weighting. A common method for calculating a check digit is konw as module 11.
+The problem with this system is that if two numbers are transposed, the check digits will be the same. In order to overcome this, each number in the pattern is given a weighting. A common method for calculating a check digit is known as modulo 11.
 
 ```
 Original number 2 3 0 4 5
@@ -1225,7 +1229,7 @@ Application software refers to all of the programs that the user uses in order t
 
 System software covers a range of programs that are concerned with the technical aspects of setting up and running the computer.
 
-There are four main types of system software:
+There are four main types of system software. Utility programs, library programs, translators, compilers and interpreters, and operating system software.
 
 ##### Utility programs
 
@@ -1440,7 +1444,7 @@ The control bus is used to ensure that the correct data is travelling to the rig
 #### IO controllers
 
 The processor also receives and sends instructions and data to the various input and output devices connected to the computer.
-Controllers consist of their own circuitry that handle the data folowing between the processor and the device.
+Controllers consist of their own circuitry that handle the data following between the processor and the device.
 Every device will have its own controller which allows new devices to be connected to the processor at any time.
 
 A key feature of an IO controller is that it will translate signals from the device into the format required by the processor. There are many different devices and many different types of processor and it is the IO controller that provides the flexibility to add new devices without having to redesign the processor.
@@ -1536,7 +1540,7 @@ The interrupt register is another type of status register, it stores details of 
 
 An additional step is added to the fetch-execute cycle. Between the completion of one execution and the start of the next a check is made to see if the interrupt register contains a new interrupt.
 
-If an interrupt has occured the processor will stop whatever it is doing to service the interrupt. This is done using the interrupt service routine.
+If an interrupt has occurred the processor will stop whatever it is doing to service the interrupt. This is done using the interrupt service routine.
 
 
 The contents of the registers are placed onto the system stack. Once the interrupt has been processed the CPU will retrieve the values from the stack and place them in the correct registers.
@@ -2081,6 +2085,8 @@ The address is made of several parts:
 #### Domain name
 
 **Domain name** The recognisable name of a domain on the Internet
+
+**Fully qualified domain name** A domain name including the host server, e.g. www or ftp
 
 The domain name identifies organisations or groups on the Internet.
 - co indicates a company
